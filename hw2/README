@@ -1,0 +1,57 @@
+Bradford Smith (bsmith8)
+CS 615 HW 2 Filesystem Creation
+02/04/2018
+-------------------------------
+
+What I did
+==========
+
+For my first two OSs I chose to use Linux because that is where I am
+comfortable. I started with an Ubuntu instance, used `fdisk` to make a partition
+`mkfs.ext4` to make a new filesystem and then `mount` to mount it. I was then
+able to create a file (after forgetting I wasn't root). I moved the volume to a
+Fedora instance just to see if there were any differences in the core tools
+shipped but I didn't find any. This time all I needed to do was mount the
+partition and read the file.
+
+For the next go I wanted to push myself thinking I would start with NetBSD and
+try to move the volume to Linux. I struggled with NetBSD, for one thing `fdisk`
+doesn't default to interactive mode like it does on Linux, so I spent some time
+reading man pages to figure that out. I had originally started with the first
+volume thinking I would just wipeout the partition and create a new one but
+while struggling with `fdisk` I decided to just use a clean volume. Eventually I
+made a partition but didn't know what type to make it. I tried for a while to
+make it EXT (type 15) which was mentioned in the `fdisk(8)` manpage, but after
+doing that I couldn't seem to run `newfs_ext2fs`, so I believe I settled with
+the default 4.2BSD type (which is probably where I wrecked my goal of moving it
+to Linux). After a while of fighting with `fdisk`, `disklabel` and
+`newfs_ext2fs` I manged to get overlapping partition labels on the disk and
+eventually just caved in an ran `newfs` which just worked. At that point I
+decided just to move the volume to a new NetBSD instance where I mounted the
+partition and read the file.
+
+Can you use the same volume / filesystem across different OS instances?
+Why/how/why not?
+=======================================================================
+
+It depends. In order to use the same volume across different OS instances that
+volume needs to be partitioned in a way that both OSs will understand, and the
+filesystem needs to be one that both OSs can understand as well. When I made a
+Linux partition and ext4 filesystem it was painless to transfer it between two
+different versions of Linux, but I probably wouldn't have been able to read it
+in NetBSD. I could (and tried to) create an ext2 filesystem in NetBSD which
+could have been read by Linux but I didn't know how I had to partition the
+volume so that both could understand it.
+
+What I learned
+==============
+
+Despite the fact that Linux and NetBSD are both Unix-like their core tools can
+be extremely different. I had know sometimes the flags of different coreutils
+where different but I had not realized how different a tool like `fdisk` could
+be. I didn't expect to struggle as much as I did, and despite getting it to work
+I still don't really know how NetBSD's `fdisk` works with `disklabel`. I _think_
+I used `fdisk` to create a physical disk partition then `disklabel` to tell the
+OS where it was, but when I did that I think it already had a label for it
+(because I ended up with overlapping partitions) so I may not have needed
+`disklabel`.
