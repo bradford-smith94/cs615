@@ -1,0 +1,58 @@
+Bradford Smith (bsmith8)
+CS 615 useradd-exercise
+02/12/2018
+========================
+
+Outline
+=======
+- on Linux Lab inspect user account
+    - run `id`, and `groups`:
+        uid=12063(bsmith8) gid=30000(student) groups=30000(student)
+        student
+    - I know my login shell is bash and my home dir is /home/bsmith8
+- login to instance
+    - on Debian I login as admin
+    - on OmniOS I login as root
+- create a "student" group
+    - groupadd -g 30000 student
+- create a "bsmith8" user
+    - useradd -d /home/bsmith8 -g student -m -s /bin/bash -u 12063 bsmith8
+    - on OmniOS home directory is /export/home/bsmith8
+
+
+What tools did you use?
+=======================
+- id
+- groups
+- sudo (on Debian because I was logged in as admin)
+- groupadd
+- useradd
+- mkdir (on OmniOS for /export/home)
+
+How do the tools to create the accounts on each instance differ?
+================================================================
+The tools to create the accounts do not differ between the instances, except
+that on OmniOS I cannot create a home directory in /home/. Instead home
+directories seem to be created in /export/home/. I also had to create the
+directory 'home' in /export/.
+
+Which user account is used to administer each instance?
+=======================================================
+- Debian - admin (sudo privileges)
+- OmniOS - root
+
+If you wanted to give another person administrative privileges, how would you go
+about that?
+================================================================================
+I would add their user to the sudoers file using `visudo`.
+
+Write up the high-level to sync dozens or hundreds of accounts across hundreds
+or thousands of hosts. Consider pitfalls and error scenarios.
+==============================================================================
+For this I would look into tools like LDAP, Ansible, Chef, Puppet or SaltStack.
+Each of these tools has their own strengths and weaknesses regarding the matter
+so it would heavily depend on who was going to be using them and for what
+exactly.
+
+Without having looked very deeply into the matter I would probably look at LDAP
+and Ansible first.
