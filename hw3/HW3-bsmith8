@@ -73,7 +73,7 @@ Running `pkg-static search apache` I found two Apache webserver packages
     - gdbm
     - indexinfo
     - gettext-runtime
-    -db5
+    - db5
 
 - How many new files were added?
     - Running `pkg-static info -l <packages> | wc -l` reports that 7227 files
