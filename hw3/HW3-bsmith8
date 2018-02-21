@@ -1,0 +1,285 @@
+Bradford Smith (bsmith8)
+CS 615 HW 3 Package Management Basics
+02/20/2018
+-------------------------------------
+
+Binary Packages
+===============
+
+Fedora
+------
+
+Using ami-bcf84ec6 I was able to create a t2.micro instance. From memory I
+believe Fedora is a rpm based distribution, so I started by running `which rpm`
+and `which yum`, after seeing they were installed `man yum` told me that yum was
+now deprecated in favor of dnf.
+
+Running `dnf search apache` gave many results for things I wasn't looking for,
+but I found that the Apache HTTP server package was called "httpd".
+
+- How many packages were added?
+    - After running `dnf install httpd`, dnf reports that it installed 8
+      packages (including the httpd package).
+    - httpd
+    - httpd-filesystem
+    - httpd-tools
+    - apr
+    - mailcap
+    - apr-util
+    - mod_http2
+    - fedora-logos-httpd
+
+- How many new files were added?
+    - Running `dnf repoquery -l <packages> | wc -l` reports that 1467 files have
+      been added.
+
+- Are all added packages necessary to run the software?
+    - To figure this out I ran `dnf repoquery --requires --resolve httpd` to
+      print a list of all the packages required by the Apache webserver. All the
+      dependencies that were installed with httpd were listed in the output, so
+      I believe that all the packages I installed are necessary to run the
+      software.
+
+- Which version of apache did you end up with?
+    - `httpd -V` reports that I installed Apache/2.4.29 (Fedora).
+
+FreeBSD
+-------
+
+Using ami-d0b520b8 I was able to create a t2.micro instance. I had to lookup the
+username to login as (ec2-user). I also had to lookup what the package manager
+for FreeBSD is, as I did not know it (pkg).
+
+Running `pkg search apache` produced an error due to a missing symbol 'openat'
+the manpage for pkg said that pkg-static is a statically linked version normally
+used to install pkg itself, using pkg-static avoids this error. Looking up this
+error I found it is due to the version of FreeBSD this ami runs (10.1) being
+end-of-life. I also had to run `su root`, as the ec2-user didn't have the
+permissions to run the package manager and sudo wasn't installed.
+
+Running `pkg-static search apache` I found two Apache webserver packages
+("apache22" and "apache24").
+
+- How many packages were added?
+    - After running `pkg-static install apache24`, pkg reports that it installed
+      11 packages (including the apache24 package).
+    - apache24
+    - libnghttp2
+    - libxml2
+    - expat
+    - perl5
+    - pcre
+    - apr
+    - gdbm
+    - indexinfo
+    - gettext-runtime
+    -db5
+
+- How many new files were added?
+    - Running `pkg-static info -l <packages> | wc -l` reports that 7227 files
+      have been added by the installed packages.
+
+- Are all added packages necessary to run the software?
+    - Initially I ran `pkg-static info -d apache24` and only saw 6 dependencies
+      and thought that not all installed packages were needed, but `pkg-static
+      autoremove -n` didn't say any needed to be uninstalled, so I went
+      searching for the dependencies of the apache dependencies and found the
+      other four packages.
+
+      In short, yes, all installed packages are needed.
+
+- Which version of apache did you end up with?
+    - `httpd -V` reports that I installed Apache/2.4.29 (FreeBSD).
+
+Ubuntu
+------
+
+Using ami-78cef802 I was able to create a t1.micro instance. I know that Ubuntu
+uses the apt and dpkg package mangers. So I used `apt search apache` to find
+that the webserver package name is "apache2".
+
+- How many packages were added?
+    - After running `apt install apache2` apt reports that it installed 8
+      packages (including apache2).
+    - apache2
+    - apache2-bin
+    - apache2-data
+    - libapr1
+    - libaprutil1
+    - libaprutil1-dbd-sqlite3
+    - libaprutil1-ldap
+    - ssl-cert
+
+- How many new files were added?
+    - Running `dpkg-query -L <packages> | wc -l` reports that 737 files have
+      been added by the installed packages.
+
+- Are all added packages necessary to run the software?
+    - No, running `apt-cache depends apache2` shows that ssl-cert is only a
+      recommended dependency.
+
+- Which version of apache did you end up with?
+    - `apache2 -v` reports that I installed Apache/2.4.7 (Ubuntu)
+
+
+Build from Source
+=================
+
+I chose to use an instance of FreeBSD (ami-d0b520b8) to push myself to learn
+more about a Unix that I'm not familiar with.
+
+From https://httpd.apache.org/download.cgi I got the URL to a source tarball for
+the latest version (http://supergsego.com/apache/httpd/httpd-2.4.29.tar.gz).
+
+Then I needed to download this file, but neither curl nor wget were installed.
+I found ftp was installed so I found an ftp mirror instead
+(ftp://apache.mirrors.tds.net/pub/apache.org/httpd/httpd-2.4.29.tar.gz).
+
+I downloaded the tarball with ftp, used `sha256` on the resulting file in order
+to compare it to the checksum on the Apache website, and then extracted it using
+`tar -xzf`.
+
+I read the README file looking for install instructions and was directed to the
+INSTALL file. Attempting to run the configure script told me I needed APR,
+further reading of the INSTALL file told me to get APR from apr.apache.org.
+
+Again I used ftp in order to download APR
+(ftp://apache.mirrors.tds.net/pub/apache.org/apr/apr-1.6.3.tar.gz) and APR-util
+(ftp://apache.mirrors.tds.net/pub/apache.org//apr/apr-util-1.6.1.tar.gz), then
+used sha256 to verify the checksum and `tar -xzf` to extract them.
+
+I put APR and APR-util inside the source of httpd under srclib/apr/ and
+srclib/apr-util/ as instructed in the INSTALL file. Then I tried to run
+`./configure --with-included-apr --prefix=/usr/local/` but it produced an
+error saying it required pcre from pcre.org.
+
+So I downloaded
+(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.41.tar.gz) using
+ftp, they didn't have checksums published and only had gpg signatures in the ftp
+server (since I don't have gpg installed I skipped verification of this file).
+
+For pcre I ran `./configure --prefix=/usr/local/`, then I ran `make` and `make
+install` which all executed successfully.
+
+Then I went back to the extracted sources for httpd and again ran `./configure
+--with-included-apr --prefix=/usr/local/`. This time it executed successfully,
+so I ran `make`, but make failed because it was missing the header file
+'expat.h'. I couldn't find an ftp download for expat and don't want to go
+through getting wget without the package manager, so I installed expat with pkg.
+
+I used setenv to add LDFLAGS="-L/usr/local/lib" and
+CFLAGS="-I/usr/local/include" and re-ran `./configure --with-included-apr
+--prefix=/usr/local`. Then ran `make` which this time executed successfully, so
+I ran `make install` which also executed successfully, apache is now installed.
+
+- What additional software did you have to install?
+    - apr
+    - apr-util
+    - pcre
+    - expat
+
+- How did you install these pre-requisites? Can you do this without using any
+  package manager at all (i.e. everything from source)?
+    - apr, apr-util, and pcre I got with ftp
+    - expat I got through pkg because I couldn't find an ftp download
+    - I could have done everything from source if I spent the time to install
+      wget from source (provided there was an ftp download for that) or if I had
+      managed to find an ftp site hosting expat
+
+- How many new files were added?
+    - Running `pkg-static info -l expat | wc -l` shows expat added 16 files.
+    - Running `find /usr/local -mtime 1 | wc -l` shows I modified 548 files
+      within the last day (which I think is a reasonable assumption that these
+      are the files I compiled for the apache webserver).
+    - That is a total of 564 added files.
+
+- Which version of apache did you end up with?
+    - Running `httpd -V` reports that I installed Apache/2.4.29 (Unix)
+
+
+Security Considerations
+=======================
+
+Fedora
+------
+
+Using ami-bcf84ec6.
+
+- How many total software packages are present on each system?
+    - `dnf list --installed | wc -l` reports that there are 317 packages
+      installed on the system (after installing apache).
+
+- How many of those have any known vulnerabilities?
+    - `dnf updateinfo security` reports that there are 11 security updates
+      available, so at least 11 packages are vulnerable. I can't seem to find a
+      dnf equivalent to the yum-security plugin, this seems to be the best I can
+      do short of checking by hand.
+
+- When you installed apache (and any required dependencies), how do you know you
+  didn't install any compromised software?
+    - The package manager checks GPG signatures on packages downloaded, so as
+      long as I trust the distribution package maintainers I know I downloaded
+      legitimate packages. As to weather or not I installed packages with CVEs,
+      I have no idea.
+
+FreeBSD
+-------
+
+Using ami-d0b520b8.
+
+- How many total software packages are present?
+    - Running `pkg-static info | wc -l` reports that 17 packages are installed.
+      This seems quite low, but I can't find any other ways of listing all
+      packages.
+
+- How many of those have any known vulnerabilities?
+    - Running `pkg-static audit` (after needing to do `pkg-static audit -F`)
+      reports that there are zero problems with the installed packages, which
+      also seems low, but again I don't know how else I would do this.
+
+- When you installed apache (and any required dependencies), how do you know you
+  didn't install any compromised software?
+    - Like dnf did on Fedora, I know pkg checks signatures to ensure that what I
+      download is exactly what the package maintainers said it should be, this
+      and knowing the output of `pkg audit` is zero tells me that I didn't
+      install any compromised software.
+
+Ubuntu
+------
+
+Using ami-78cef802.
+
+- How many total software packages are present?
+    - Running `apt list --installed | wc -l` reports that 454 packages are
+      installed.
+
+- How many of those have any known vulnerabilities?
+    - I tried to install debsecan like was mentioned in the previous lecture to
+      do this. However, running debsecan resulted in an HTTP 403 while
+      downloading (what I believe is the list of CVEs). If I knew a URL to find
+      vulnerability information that works with debsecan I could probably get it
+      to run, but after searching for one, I couldn't find one.
+
+- When you installed apache (and any required dependencies), how do you know you
+  didn't install any compromised software?
+    - Like Fedora all I have to go on is that apt checks signatures so that the
+      packages I download are the same as are in the repositories.
+
+FreeBSD (from source)
+------------------
+
+Using ami-d0b520b8.
+
+- How many total software packages are present?
+    - Running `pkg-static info | wc -l` reports that 10 packages are installed.
+      Which makes sense because the package manager doesn't know about the
+      software I compiled myself.
+
+- How many of those have any known vulnerabilities?
+    - Running `pkg-static audit` again results in zero vulnerabilities.
+
+- When you installed apache (and any required dependencies), how do you know you
+  didn't install any compromised software?
+    - I know I didn't install compromised software because I verified sha256
+      checksums for all sources I downloaded (with the exception of pcre and
+      expat, but pkg verified expat for me).
