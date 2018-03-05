@@ -1,0 +1,30 @@
+Bradford Smith (bsmith8)
+CS 615 HW 4 tcpdump DNS
+03/05/2018
+------------------------
+
+Part 1: traceroute
+==================
+
+I began by recording a typescript log (with timing information) of the session
+in case I needed to compare timestamps for when traceroutes were run. Then
+capturing all but port 22 (ssh) traffic with tcpdump I ran each of the
+traceroutes in the assignment. I ended the tcpdump and the typescript and
+shutdown the AWS instance as we did in the in-class example.
+
+To view only ICMP and UDP packets I used the command:
+    `tcpdump -n -r <file> udp or icmp`
+
+I opted not to use `-t` in case I needed the timestamps in order to distinguish
+which traceroute was which. This ended up not being necessary as I could see the
+hostnames in the DNS lookup packets.
+
+The trimmed and formatted tcpdump output for the traceroute to: TODO can be
+found in the included file TODO.
+
+Visual Traceroute
+-----------------
+
+
+Part 2: DNS tracing
+===================
