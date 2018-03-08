@@ -1,29 +1,40 @@
 Bradford Smith (bsmith8)
 CS 615 HW 4 tcpdump DNS
-03/05/2018
+03/08/2018
 ------------------------
 
 Part 1: traceroute
 ==================
 
 I began by recording a typescript log (with timing information) of the session
-in case I needed to compare timestamps for when traceroutes were run. Then
-capturing all but port 22 (ssh) traffic with tcpdump I ran each of the
-traceroutes in the assignment. I ended the tcpdump and the typescript and
-shutdown the AWS instance as we did in the in-class example.
+in case I needed to compare timestamps for when traceroutes were run. These can
+be viewed in the included `traceroutes.typescript` and `traceroutes.timing`
+files. Then while capturing all but port 22 (ssh) traffic with tcpdump I ran
+each of the traceroutes in the assignment. I ended the tcpdump and the
+typescript and shutdown the AWS instance as we did in the in-class example.
 
 To view only ICMP and UDP packets I used the command:
-    `tcpdump -n -r <file> udp or icmp`
+    `tcpdump -t -n -r <file> udp or icmp`
 
-I opted not to use `-t` in case I needed the timestamps in order to distinguish
-which traceroute was which. This ended up not being necessary as I could see the
-hostnames in the DNS lookup packets.
+I went through this output with the typescript replay of the traceroute and
+identified which packets were which by referencing IP addresses.
 
-The trimmed and formatted tcpdump output for the traceroute to: TODO can be
-found in the included file TODO.
+The trimmed and formatted tcpdump output for the traceroute to: "www.hawaii.edu"
+can be found in the included file `hawaii.traceroute`. I selected Hawaii because
+it was an interesting traceroute. It was one of a few that never seemed to find
+the end, after 20 hops the rest did not respond. Navigating a browser to
+"www.hawaii.edu" still showed a web page, so the servers in the last legs of the
+traceroute must either be configured not to respond to traceroute or are
+improperly configured.
 
-Visual Traceroute
------------------
+Another thing I found interesting when going through the output to format it
+nicely was that the ICMP responses from each of the hops come in out of order
+and (as a result) must be re-ordered by traceroute according to their TTLs.
+However the reverse DNS requests for each of the hops is done in order, so this
+must be done after traceroute as figured out what order the hosts are in.
+
+Visual Traceroutes
+------------------
 
 
 Part 2: DNS tracing
