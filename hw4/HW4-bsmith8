@@ -36,6 +36,87 @@ must be done after traceroute as figured out what order the hosts are in.
 Visual Traceroutes
 ------------------
 
+www.stevens.edu
+Visual Traceroute
+    The traceroute starts in Washington state, crosses to the Eastern US, then
+    crosses back to San Jose, California before crossing back and reaching
+    Stevens. This was interesting.
+Traceroute on a Map
+    The traceroute starts in Germany, and gets stuck there? For some reason when
+    I'm running this it seems content to end the traceroute at some IP in
+    Frankfurt Germany (104.16.126.51). This is puzzling, maybe the link from
+    there to Stevens is down right now?
+
+www.uni-marburg.de
+Visual Traceroute
+    The traceroute starts in Washington state, crosses to the Eastern US, makes
+    a jump to Colorado, then California, then instantly to Germany (I guess by
+    satellite?). Then seems to take a sensible path through Germany. Nothing too
+    unusual here.
+Traceroute on a Map
+    This tool starts in Germany so it makes a fairly quick trip in a sensible
+    enough looking path.
+
+www.uba.ar
+Visual Traceroute
+    The traceroute starts in Washington state, crosses to the Eastern US where
+    it moves north and south a bit before settling in Florida. The rest of the
+    traceroute is "no response" so that is where it ends.
+Traceroute on a Map
+    The traceroute starts in Germany and then doesn't even move. It seems that
+    it searches for a link (maybe satellite?) but then gets no response and
+    ends.
+
+www.hawaii.edu
+Visual Traceroute
+    Although it didn't place map points, this again starts in the Western US and
+    crosses to the Eastern US before jumping from the New Jersey area to Hawaii.
+    It seems strange that the traceroute wouldn't go to Hawaii from California,
+    but then again it's strange that all the traceroutes from this tool go from
+    Western US to Eastern US almost all the time. I guess the fastest link to
+    anywhere from the West coast is the East coast.
+Traceroute on a Map
+    This one was interesting, the traceroute jumped to a few points in Germany,
+    then jumped up to Sweden, tried a few points there and eventually ended in
+    Stockholm. I'm starting to wonder if Europe is having trouble reaching the
+    US right now, although trying www.google.com does show the traceroute
+    hitting California, interesting.
+
+www.hku.hk
+Visual Traceroute
+    This starts in Washington, makes it's usual jump to the Eastern US and then
+    a hop in Kansas before jumping to Japan (by way of China?), then back to
+    China and then to New Zealand and back to China before ending with no
+    responses somewhere. The jump to New Zealand makes no sense to me,
+    especially after it had already reached Japan and China.
+Traceroute on a Map
+    Starting from Germany the traceroute moves around the country (I guess to
+    where a main link is) then immediately to China (Hong Kong), but jumps over
+    to Japan and back before moving further into Hong Kong and eventually
+    getting no response. Again the jump to Japan is weird (maybe it shares part
+    of an IP range with Hong Kong?).
+
+www.du.ac.in
+Visual Traceroute
+    This one moves from Washington to the East coast where it then jumps to the
+    UK (this is probably Trans-Atlantic cable) moves north in the UK then jumps
+    to India (I'm guessing satellite because there were no other hops) and dies
+    with no responses. This one was very straight-forward and makes sense.
+Traceroute on a Map
+    Starting from Germany the traceroute went first to London, then straight to
+    India similar to what was seen in the last traceroute, although it skipped
+    the northern portion of the UK.
+
+www.usyd.edu.au
+Visual Traceroute
+    From Washington state the traceroute went to the Eastern US where it made
+    the jump to Eastern Australia then moved into the center of the continent
+    and then reaching it's destination. This one also presents no surprises.
+Traceroute on a Map
+    Starting in Germany the traceroute eventually jumps to Colorado and seems
+    content stopping there. This looks to be a case of a broken link similar to
+    the traceroute to Stevens and Hawaii on this tool.
+
 
 Part 2: DNS tracing
 ===================
