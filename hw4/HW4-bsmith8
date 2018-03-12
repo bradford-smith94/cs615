@@ -1,6 +1,6 @@
 Bradford Smith (bsmith8)
 CS 615 HW 4 tcpdump DNS
-03/08/2018
+03/12/2018
 ------------------------
 
 Part 1: traceroute
@@ -120,3 +120,80 @@ Traceroute on a Map
 
 Part 2: DNS tracing
 ===================
+
+Setting up DNS Server
+---------------------
+
+In order to setup the DNS server I created my first instance of ami-628ad918 and
+checked if `bind` was installed, since it wasn't installed I used `apt` to get
+`bind9`. I followed along with the tldp.org tutorial
+(www.tldp.org/HOWTO/DNS-HOWTO-3.HTML) in the assignment to make sure that bind
+was installed properly.
+
+The configuration files were not the same as the tutorial (I didn't expect them
+to be, as the tutorial mentioned Debian potato). Key differences noted in
+configuration:
+
+    - directory is /var/cache/bind/ not /var/named/
+    - root zone is in /etc/bind/db.root not root.hints
+    - localhost zone configuration is different and can be found in
+        - /etc/bind/db.local (local loopback)
+        - /etc/bind/db.127 (local loopback)
+        - /etc/bind/db.0 (broadcast)
+        - /etc/bind/db.255 (broadcast)
+    - db.root was formatted differently but contained the same IP address for
+      the root servers
+
+Then I added "nameserver 127.0.0.1" to /etc/resolv.conf and removed the internal
+AWS "domain", "search" and "nameserver" lines. Then I used `top` to determine if
+the system was using systemd or init.d and found that systemd was running. So I
+started bind9 by using `sudo systemctl start bind9.service`.
+
+I tried to use `dig` to verify that it was working but didn't have it installed,
+I also tried `nslookup` but that wasn't installed either. So I installed the
+package dnsutils (successfully, which probably also verified that it was
+working) and ran `dig -x 127.0.0.1` and saw a response from localhost giving a
+PTR? record named "localhost".
+
+(1) DNS Server Telnet
+---------------------
+
+I needed to install `telnet`, and did so with `apt`. Then I ran the telnet
+command to fetch the index at www.yahoo.com.
+
+TODO
+
+Setup DNS Client
+----------------
+
+In order to setup the DNS client I created my second instance of ami-628ad918. I
+edited the /etc/resolv.conf to have only "nameserver <server>" where <server> is
+the IP address of my DNS server instance. I then tried to verify that this
+worked but failed to resolve a name (google.com). Then remembered that I
+probably needed to open port 53 on my DNS server.
+
+I checked on the DNS server using `netstat -an` and found that so far it was
+only listening on local interfaces. So I added "listen-on { any; };" to the
+options section of the bind config and restarted the service. This still didn't
+work so I checked the systemd journal with `sudo journalctl -u bind9` and found
+that the client queries were being recieved but denied. After searching this I
+found I had to also add an allow-query option to bind, ("allow-query { any; };")
+although in practice any would ideally be replaced with a network that the DNS
+server will serve or at least be shielded from the Internet by a rate-limiter of
+some sort. After adding both those options to bind9 and restarting the service
+the client instance was able to resolve names using the DNS server instance.
+
+(2) DNS Client Telnet
+---------------------
+
+I again needed to install `telnet` before I was able to run the command to
+telnet www.twitter.com.
+
+TODO
+
+(3) DNS Server Reverse Lookup
+-----------------------------
+
+I ran the reverse lookup using `dig -x 199.233.217.205`.
+
+TODO
