@@ -1,6 +1,6 @@
 Bradford Smith (bsmith8)
 CS 615 HW 4 tcpdump DNS
-03/12/2018
+03/16/2018
 ------------------------
 
 Part 1: traceroute
@@ -161,7 +161,8 @@ PTR? record named "localhost".
 I needed to install `telnet`, and did so with `apt`. Then I ran the telnet
 command to fetch the index at www.yahoo.com.
 
-TODO
+Trimmed, formatted and annotated tcpdump output for this request can be found in
+the included `yahoo.telnet` file.
 
 Setup DNS Client
 ----------------
