@@ -1,6 +1,6 @@
 Bradford Smith (bsmith8)
 CS 615 HW 4 tcpdump DNS
-03/17/2018
+03/18/2018
 ------------------------
 
 Part 1: traceroute
@@ -19,19 +19,24 @@ To view only ICMP and UDP packets I used the command:
 I went through this output with the typescript replay of the traceroute and
 identified which packets were which by referencing IP addresses.
 
-The trimmed and formatted tcpdump output for the traceroute to: "www.hawaii.edu"
-can be found in the included file `hawaii.traceroute`. I selected Hawaii because
-it was an interesting traceroute. It was one of a few that never seemed to find
-the end, after 20 hops the rest did not respond. Navigating a browser to
-"www.hawaii.edu" still showed a web page, so the servers in the last legs of the
-traceroute must either be configured not to respond to traceroute or are
-improperly configured.
+The trimmed, formatted and annotated tcpdump output for the traceroute to:
+"www.hawaii.edu" can be found in the included file `hawaii.traceroute`. I
+selected Hawaii because it was an interesting traceroute. It was one of a few
+that never seemed to find the end, after 20 hops the rest did not respond.
+Navigating a browser to "www.hawaii.edu" still showed a web page, so the servers
+in the last legs of the traceroute must either be configured not to respond to
+traceroute or are improperly configured.
 
 Another thing I found interesting when going through the output to format it
 nicely was that the ICMP responses from each of the hops come in out of order
 and (as a result) must be re-ordered by traceroute according to their TTLs.
 However the reverse DNS requests for each of the hops is done in order, so this
 must be done after traceroute as figured out what order the hosts are in.
+
+Lastly, it seems that most (if not all) hosts along the traceroute where pinged
+three times and were attempted to be resolved to a name three times. Some of
+these hosts appear to have three different IP addresses while the others just
+end up getting triplicate copies of all packets. TODO
 
 Visual Traceroutes
 ------------------
@@ -131,8 +136,9 @@ checked if `bind` was installed, since it wasn't installed I used `apt` to get
 was installed properly.
 
 The configuration files were not the same as the tutorial (I didn't expect them
-to be, as the tutorial mentioned Debian potato). Key differences noted in
-configuration:
+to be, as the tutorial mentioned Debian Potato). Overall, the differences were
+almost completely in file names and locations or just updated syntax. Key
+differences noted in configuration:
 
     - directory is /var/cache/bind/ not /var/named/
     - root zone is in /etc/bind/db.root not root.hints
@@ -153,7 +159,7 @@ I tried to use `dig` to verify that it was working but didn't have it installed,
 I also tried `nslookup` but that wasn't installed either. So I installed the
 package dnsutils (successfully, which probably also verified that it was
 working) and ran `dig -x 127.0.0.1` and saw a response from localhost giving a
-PTR? record named "localhost".
+PTR record named "localhost".
 
 (1) DNS Server Telnet
 ---------------------
@@ -199,4 +205,5 @@ the output from the server can be found in `server-twitter.telnet`.
 
 I ran the reverse lookup using `dig -x 199.233.217.205`.
 
-TODO
+The trimmed, formatted and annotated tcpdump output from the server machine
+doing the reverse lookup can be found in `netbsd.lookup`.

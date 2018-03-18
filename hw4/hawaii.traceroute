@@ -14,10 +14,7 @@ Start traceroute UDP packets to target
 6th hop response
     IP 100.65.11.161 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
-    IP 100.65.10.33 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    <UDP to target>
-    IP 100.65.11.65 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    <UDP to target>
+    <x3>
 
 2nd hop response
     IP 100.66.13.144 > 172.31.19.70: ICMP time exceeded in-transit, length 36
@@ -30,10 +27,9 @@ Start traceroute UDP packets to target
 7th hop response
     IP 205.251.244.36 > 172.31.19.70: ICMP time exceeded in-transit, length 148
     <UDP to target>
-    IP 205.251.244.34 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    <UDP to target>
+    <x2>
 
-2nd hop response
+2nd hop response (again)
     IP 100.66.13.148 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
 
@@ -46,7 +42,7 @@ Start traceroute UDP packets to target
     IP 100.66.4.151 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target x2>
 
-8th hop response
+8th hop response (again)
     IP 52.93.24.131 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
 
@@ -58,14 +54,14 @@ Start traceroute UDP packets to target
     IP 54.239.108.111 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
 
-5th hop response
+5th hop response (again)
     IP 100.66.4.225 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
 
-3rd hop response
+3rd hop response (again)
     IP 100.66.15.246 > 172.31.19.70: ICMP time exceeded in-transit, length 36
 
-10th hop response
+10th hop response (again)
     IP 54.239.108.75 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
     IP 54.239.108.179 > 172.31.19.70: ICMP time exceeded in-transit, length 36
@@ -78,149 +74,146 @@ Start traceroute UDP packets to target
     IP 64.57.30.38 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target x2>
 
-5th hop response
+5th hop response (again)
     IP 100.66.4.65 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
 
-3rd hop response
+3rd hop response (again)
     IP 100.66.15.104 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
 
-4th hop response
+4th hop response (again)
     IP 100.66.6.11 > 172.31.19.70: ICMP time exceeded in-transit, length 36
     <UDP to target>
 
 9th hop response
     IP 54.239.108.230 > 172.31.19.70: ICMP time exceeded in-transit, length 148
+    <x3>
     <UDP to target>
-    IP 54.239.108.94 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    IP 54.239.108.94 > 172.31.19.70: ICMP time exceeded in-transit, length 148
 
 1st hop response
     IP 216.182.226.120 > 172.31.19.70: ICMP time exceeded in-transit, length 36
+    <x3>
     <UDP to target>
-    IP 216.182.226.120 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    IP 216.182.226.120 > 172.31.19.70: ICMP time exceeded in-transit, length 36
 
 Reverse DNS lookup of 1st hop
     IP 172.31.19.70.33851 > 172.31.0.2.53: 58246+ PTR? 120.226.182.216.in-addr.arpa. (46)
 
 12th hop response
     IP 162.252.70.129 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    IP 162.252.70.129 > 172.31.19.70: ICMP time exceeded in-transit, length 148
+    <x2>
 
-2nd hop response
+2nd hop response (again)
     IP 100.66.13.142 > 172.31.19.70: ICMP time exceeded in-transit, length 36
 
-7th hop response
+7th hop response (again)
     IP 205.251.244.66 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    <DNS NXDomain>
+    <DNS NXDomain (first hop didn't resolve)>
 
 Reverse DNS lookup of 2nd hop
     IP 172.31.19.70.52711 > 172.31.0.2.53: 923+ PTR? 148.13.66.100.in-addr.arpa. (44)
 
-4th hop response
+4th hop response (again)
     IP 100.66.6.71 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    <DNS NXDomain>
+    <DNS NXDomain (second hop didn't resolve)>
 
-Reverse DNS lookup of 2nd hop
+Reverse DNS lookup of 2nd hop (again)
     IP 172.31.19.70.50800 > 172.31.0.2.53: 43797+ PTR? 144.13.66.100.in-addr.arpa. (44)
-    <DNS NXDomain>
+    <DNS NXDomain (second hop didn't resolve)>
     <UDP to target x4>
     IP 172.31.19.70.56339 > 172.31.0.2.53: 49973+ PTR? 142.13.66.100.in-addr.arpa. (44)
 
 13th hop response
     IP 162.252.70.131 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    IP 162.252.70.131 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    <DNS NXDomain>
+    <x2>
+    <DNS NXDomain (second hop didn't resolve)>
 
 Reverse DNS lookup of 3rd hop
     IP 172.31.19.70.50086 > 172.31.0.2.53: 54076+ PTR? 104.15.66.100.in-addr.arpa. (44)
 
-13th hop response
+13th hop response (again)
     IP 162.252.70.131 > 172.31.19.70: ICMP time exceeded in-transit, length 148
 
 14th hop response
     IP 162.252.70.132 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    IP 162.252.70.132 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    <DNS NXDomain>
+    <x2>
+    <DNS NXDomain (third hop didn't resolve)>
 
-Reverse DNS lookup of 3rd hop
+Reverse DNS lookup of 3rd hop (again)
     IP 172.31.19.70.40393 > 172.31.0.2.53: 26462+ PTR? 246.15.66.100.in-addr.arpa. (44)
 
-14th hop response
+14th hop response (again)
     IP 162.252.70.132 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    <DNS NXDomain>
+    <DNS NXDomain (third hop didn't resolve)>
 
-Reverse DNS lookup of 3rd hop
+Reverse DNS lookup of 3rd hop (again)
     IP 172.31.19.70.36308 > 172.31.0.2.53: 39746+ PTR? 74.15.66.100.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomain (third hop didn't resolve)>
 
 Reverse DNS lookup of 4th hop
     IP 172.31.19.70.34436 > 172.31.0.2.53: 29508+ PTR? 71.6.66.100.in-addr.arpa. (42)
-    <DNS NXDomain>
+    <DNS NXDomain (fourth hop didn't resolve)>
     IP 172.31.19.70.41834 > 172.31.0.2.53: 54017+ PTR? 11.6.66.100.in-addr.arpa. (42)
-    <DNS NXDomain>
+    <DNS NXDomain (fourth hop didn't resolve)>
     IP 172.31.19.70.38957 > 172.31.0.2.53: 8146+ PTR? 105.7.66.100.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomain (fourth hop didn't resolve)>
 
 Reverse DNS lookup of 5th hop
     IP 172.31.19.70.57930 > 172.31.0.2.53: 40895+ PTR? 225.4.66.100.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomain (fifth hop didn't resolve)>
     IP 172.31.19.70.39614 > 172.31.0.2.53: 2882+ PTR? 65.4.66.100.in-addr.arpa. (42)
-    <DNS NXDomain>
+    <DNS NXDomain (fifth hop didn't resolve)>
     IP 172.31.19.70.48263 > 172.31.0.2.53: 22352+ PTR? 151.4.66.100.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomain (fifth hop didn't resolve)>
 
 Reverse DNS lookup of 6th hop
     IP 172.31.19.70.33716 > 172.31.0.2.53: 20374+ PTR? 161.11.65.100.in-addr.arpa. (44)
-    <DNS NXDomain>
+    <DNS NXDomain (sixth hop didn't resolve)>
     IP 172.31.19.70.42658 > 172.31.0.2.53: 7046+ PTR? 33.10.65.100.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomain (sixth hop didn't resolve)>
     IP 172.31.19.70.41675 > 172.31.0.2.53: 28530+ PTR? 65.11.65.100.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomain (sixth hop didn't resolve)>
 
 Reverse DNS lookup of 7th hop
     IP 172.31.19.70.58137 > 172.31.0.2.53: 51989+ PTR? 66.244.251.205.in-addr.arpa. (45)
 
 15th hop response
     IP 162.252.70.141 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    IP 162.252.70.141 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    IP 162.252.70.141 > 172.31.19.70: ICMP time exceeded in-transit, length 148
+    <x3>
 
 16th hop response
     IP 162.252.70.145 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    <DNS NXDomain>
+    <DNS NXDomain (seventh hop didn't resolve)>
 
-Reverse DNS lookup of 7th hop
+Reverse DNS lookup of 7th hop (again)
     IP 172.31.19.70.58915 > 172.31.0.2.53: 45047+ PTR? 36.244.251.205.in-addr.arpa. (45)
-    <DNS NXDomain>
+    <DNS NXDomain (seventh hop didn't resolve)>
     IP 172.31.19.70.52636 > 172.31.0.2.53: 28649+ PTR? 34.244.251.205.in-addr.arpa. (45)
-    <DNS NXDomain>
+    <DNS NXDomain (seventh hop didn't resolve)>
 
 Reverse DNS lookup of 8th hop
     IP 172.31.19.70.51323 > 172.31.0.2.53: 37835+ PTR? 105.24.93.52.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomain (eighth hop didn't resolve)>
     IP 172.31.19.70.37431 > 172.31.0.2.53: 3891+ PTR? 141.24.93.52.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomain (eighth hop didn't resolve)>
     IP 172.31.19.70.41231 > 172.31.0.2.53: 62454+ PTR? 131.24.93.52.in-addr.arpa. (43)
-    <DNS NXDomain>
+    <DNS NXDomai (eighth hop didn't resolve)n>
 
 Reverse DNS lookup of 9th hop
     IP 172.31.19.70.50566 > 172.31.0.2.53: 981+ PTR? 94.108.239.54.in-addr.arpa. (44)
-    <DNS NXDomain>
+    <DNS NXDomain (ninth hop didn't resolve)>
     IP 172.31.19.70.47607 > 172.31.0.2.53: 52040+ PTR? 230.108.239.54.in-addr.arpa. (45)
-    <DNS NXDomain>
+    <DNS NXDomain (ninth hop didn't resolve)>
     IP 172.31.19.70.42838 > 172.31.0.2.53: 38798+ PTR? 94.108.239.54.in-addr.arpa. (44)
-    <DNS NXDomain>
+    <DNS NXDomain (ninth hop didn't resolve)>
 
 Reverse DNS lookup of 10th hop
     IP 172.31.19.70.58546 > 172.31.0.2.53: 36622+ PTR? 111.108.239.54.in-addr.arpa. (45)
-    <DNS NXDomain>
+    <DNS NXDomain (tenth hop didn't resolve)>
     IP 172.31.19.70.40712 > 172.31.0.2.53: 53013+ PTR? 179.108.239.54.in-addr.arpa. (45)
-    <DNS NXDomain>
+    <DNS NXDomain (tenth hop didn't resolve)>
     IP 172.31.19.70.32929 > 172.31.0.2.53: 27418+ PTR? 75.108.239.54.in-addr.arpa. (44)
-    <DNS NXDomain>
+    <DNS NXDomain (tenth hop didn't resolve)>
 
 Reverse DNS lookup and response of 11th hop
     IP 172.31.19.70.57553 > 172.31.0.2.53: 47070+ PTR? 2.30.57.64.in-addr.arpa. (41)
@@ -242,14 +235,13 @@ Reverse DNS lookup and response of 13th hop
 Reverse DNS lookup of 14th hop
     IP 172.31.19.70.54276 > 172.31.0.2.53: 35585+ PTR? 132.70.252.162.in-addr.arpa. (45)
 
-16th hop response
+16th hop response (again)
     IP 162.252.70.145 > 172.31.19.70: ICMP time exceeded in-transit, length 148
-    IP 162.252.70.145 > 172.31.19.70: ICMP time exceeded in-transit, length 148
+    <x2>
 
 17th hop response
     IP 162.252.70.114 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    IP 162.252.70.114 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    IP 162.252.70.114 > 172.31.19.70: ICMP time exceeded in-transit, length 36
+    <x3>
 
 18th hop response
     IP 205.166.205.12 > 172.31.19.70: ICMP time exceeded in-transit, length 36
@@ -273,21 +265,19 @@ Reverse DNS lookup and response of 17th hop
 Reverse DNS lookup of 18th hop
     IP 172.31.19.70.56519 > 172.31.0.2.53: 11037+ PTR? 12.205.166.205.in-addr.arpa. (45)
 
-18th hop response
+18th hop response (again)
     IP 205.166.205.12 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    IP 205.166.205.12 > 172.31.19.70: ICMP time exceeded in-transit, length 36
+    <x2>
 
 19th hop response
     IP 205.166.205.37 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    IP 205.166.205.37 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    IP 205.166.205.37 > 172.31.19.70: ICMP time exceeded in-transit, length 36
+    <x3>
 
 20th hop response
     IP 128.171.213.2 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    IP 128.171.213.2 > 172.31.19.70: ICMP time exceeded in-transit, length 36
-    IP 128.171.213.2 > 172.31.19.70: ICMP time exceeded in-transit, length 36
+    <x3>
 
-Reverse DNS response of 18th hop
+Reverse DNS response of 18th hop (again)
     IP 172.31.0.2.53 > 172.31.19.70.56519: 11037 1/0/0 PTR et-1-2-0-3510-ohelo-re0.uhnet.net. (92)
     <UDP to target x6>
 
