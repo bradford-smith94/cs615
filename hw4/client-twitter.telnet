@@ -1,0 +1,14 @@
+Client is: 172.31.23.244
+Server is: 172.31.44.118
+
+Request to server for A records for "www.twitter.com"
+    IP 172.31.23.244.36810 > 172.31.44.118.53: 11676+ A? www.twitter.com. (33)
+
+Request to server for AAAA records for "www.twitter.com"
+    IP 172.31.23.244.36810 > 172.31.44.118.53: 36142+ AAAA? www.twitter.com. (33)
+
+Response from server with CNAMEs
+    IP 172.31.44.118.53 > 172.31.23.244.36810: 11676 3/6/3 CNAME twitter.com., A 104.244.42.65, A 104.244.42.193 (284)
+    IP 172.31.44.118.53 > 172.31.23.244.36810: 36142 1/1/0 CNAME twitter.com. (119)
+
+<The rest of the capture is the actual telnet TCP connection to www.twitter.com>

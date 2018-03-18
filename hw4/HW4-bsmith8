@@ -1,6 +1,6 @@
 Bradford Smith (bsmith8)
 CS 615 HW 4 tcpdump DNS
-03/16/2018
+03/17/2018
 ------------------------
 
 Part 1: traceroute
@@ -190,7 +190,9 @@ the client instance was able to resolve names using the DNS server instance.
 I again needed to install `telnet` before I was able to run the command to
 telnet www.twitter.com.
 
-TODO
+The trimmed, formatted and annotated tcpdump output from the client machine for
+the request can be found in the included `client-twitter.telent` file. Likewise,
+the output from the server can be found in `server-twitter.telnet`.
 
 (3) DNS Server Reverse Lookup
 -----------------------------
