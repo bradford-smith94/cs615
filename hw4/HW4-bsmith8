@@ -36,7 +36,10 @@ must be done after traceroute as figured out what order the hosts are in.
 Lastly, it seems that most (if not all) hosts along the traceroute where pinged
 three times and were attempted to be resolved to a name three times. Some of
 these hosts appear to have three different IP addresses while the others just
-end up getting triplicate copies of all packets. TODO
+end up getting triplicate copies of all packets. After looking it up in the
+manpage I found that traceroute indeed sends 3 packets to each host, I assume
+the hosts with multiple IP addresses are either doing some sort of load
+balancing or they just have multiple gateways.
 
 Visual Traceroutes
 ------------------
@@ -176,7 +179,7 @@ the included `yahoo.telnet` file.
 Interesting to see here is just how many nameservers are contacted before a
 connection is made to a domain. About 10 DNS servers were contacted, half of
 which were controlled by Yahoo, only one of which was a root server though.
-These numbers aren't exact and will probably vary depending on the domain being
+I assume these numbers will probably vary depending on the domain being
 requested.
 
 Setup DNS Client
@@ -193,9 +196,9 @@ only listening on local interfaces. So I added "listen-on { any; };" to the
 options section of the bind configuration and restarted the service. This still
 didn't work so I checked the systemd journal with `sudo journalctl -u bind9` and
 found that the client queries were being received but denied. After searching
-this I found I had to also add an allow-query option to bind, ("allow-query {
-any; };") although in practice any would ideally be replaced with a network that
-the DNS server will serve or at least be shielded from the Internet by a
+this I found I had to also add an "allow-query" option to bind, ("allow-query {
+any; };") although in practice "any" would ideally be replaced with a network
+that the DNS server will serve or at least be shielded from the Internet by a
 rate-limiter of some sort. After adding both those options to bind9 and
 restarting the service the client instance was able to resolve names using the
 DNS server instance.
@@ -215,7 +218,9 @@ the output on the server side ends up being surprisingly large. The server ends
 up contacting a lot more nameservers than it did to lookup yahoo.com. Also
 interesting to see is that the answer for Twitter ultimately comes from
 nameservers on dynect.net which is owned by "Oracle + Dyn" (according to whois),
-while the answer for Yahoo came from nameservers owned by Yahoo.
+while the answer for Yahoo came from nameservers owned by Yahoo. This leads me
+to believe that Twitter doesn't run as much of their own networking
+infrastructure as Yahoo does.
 
 (3) DNS Server Reverse Lookup
 -----------------------------
