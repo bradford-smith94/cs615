@@ -224,3 +224,14 @@ I ran the reverse lookup using `dig -x 199.233.217.205`.
 
 The trimmed, formatted and annotated tcpdump output from the server machine
 doing the reverse lookup can be found in `netbsd.lookup`.
+
+This lookup jumps around to a lot of nameservers, even to a few German servers.
+The most surprising lookup was one to a server on tastylime.net when looking up
+this domain with whois I found the registration is done through a proxy company
+to keep the owner private (which is different from all the other servers that
+the lookup went through). Navigating a browser to tastylime.net all I get is a
+page that says "Tastylime is coming" and provides no insight to the owner.
+Searching for results about the domain reveal that it used to host
+distillers.tastylime.net and there are some miscellaneous forum posts by a user
+tastylime, which lead me to believe this is a private individual's domain and
+said individual runs a public DNS server on their domain.

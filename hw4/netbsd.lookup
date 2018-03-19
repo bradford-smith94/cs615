@@ -1,10 +1,19 @@
 Reverse DNS lookup for 199.233.217.205
+
+DNS query to h.root-servers.net. (US Army Research Lab)
     IP 172.31.44.118.60819 > 198.97.190.53.53: 57936 [1au] PTR? 205.217.233.199.in-addr.arpa. (57)
     IP 172.31.44.118.35179 > 198.97.190.53.53: 11857 [1au] NS? . (28)
+
+DNS Response h.root-servers.net. (US Army Research Lab)
     IP 198.97.190.53.53 > 172.31.44.118.60819: 57936- 0/10/3 (509)
     IP 198.97.190.53.53 > 172.31.44.118.35179: 11857*-| 0/0/1 (28)
+
+DNS query to a.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.43243 > 199.180.182.53.53: 18048 [1au] PTR? 205.217.233.199.in-addr.arpa. (57)
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [S], seq 2197948270, win 29200, options [mss 1460,sackOK,TS val 698269 ecr 0,nop,wscale 7], length 0
+
+    <Start TCP with h.root-servers.net.>
+
+DNS query to l.root-servers.net. (ICANN)
     IP 172.31.44.118.37644 > 199.7.83.42.53: 50699% [1au] A? c.in-addr-servers.arpa. (51)
     IP 172.31.44.118.34958 > 199.7.83.42.53: 36267% [1au] A? d.in-addr-servers.arpa. (51)
     IP 172.31.44.118.56152 > 199.7.83.42.53: 24175% [1au] AAAA? d.in-addr-servers.arpa. (51)
@@ -12,58 +21,111 @@ Reverse DNS lookup for 199.233.217.205
     IP 172.31.44.118.55978 > 199.7.83.42.53: 31700% [1au] AAAA? e.in-addr-servers.arpa. (51)
     IP 172.31.44.118.42565 > 199.7.83.42.53: 31948% [1au] A? f.in-addr-servers.arpa. (51)
     IP 172.31.44.118.55395 > 199.7.83.42.53: 7081% [1au] AAAA? f.in-addr-servers.arpa. (51)
+
+DNS Response l.root-servers.net. (ICANN)
     IP 199.7.83.42.53 > 172.31.44.118.37644: 50699- 0/10/4 (501)
     IP 199.7.83.42.53 > 172.31.44.118.34958: 36267- 0/10/4 (501)
     IP 199.7.83.42.53 > 172.31.44.118.56152: 24175- 0/10/4 (501)
+
+DNS query to l.root-servers.net. (ICANN)
     IP 172.31.44.118.32990 > 199.7.83.42.53: 33676% [1au] AAAA? c.in-addr-servers.arpa. (51)
+
+DNS Response l.root-servers.net. (ICANN)
     IP 199.7.83.42.53 > 172.31.44.118.52254: 21273- 0/10/4 (501)
     IP 199.7.83.42.53 > 172.31.44.118.55978: 31700- 0/10/4 (501)
-    IP 198.97.190.53.53 > 172.31.44.118.42115: Flags [S.], seq 1930001444, ack 2197948271, win 1460, options [mss 1460,nop,wscale 8], length 0
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [.], ack 1, win 229, length 0
+    <TCP with h.root-servers.net.>
+
+DNS Response l.root-servers.net. (ICANN)
     IP 199.7.83.42.53 > 172.31.44.118.42565: 31948- 0/10/4 (501)
     IP 199.7.83.42.53 > 172.31.44.118.55395: 7081- 0/10/4 (501)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.40683 > 196.216.169.10.53: 65442% [1au] A? c.in-addr-servers.arpa. (51)
     IP 172.31.44.118.52460 > 196.216.169.10.53: 21016% [1au] A? d.in-addr-servers.arpa. (51)
     IP 172.31.44.118.45604 > 196.216.169.10.53: 10184% [1au] AAAA? d.in-addr-servers.arpa. (51)
+
+DNS Response l.root-servers.net. (ICANN)
     IP 199.7.83.42.53 > 172.31.44.118.32990: 33676- 0/10/4 (501)
+
+DNS Query to c.root-servers.net. (Cogent Communications)
     IP 172.31.44.118.57350 > 192.33.4.12.53: 9688% [1au] A? d.in-addr-servers.arpa. (51)
     IP 172.31.44.118.50380 > 192.33.4.12.53: 20783% [1au] AAAA? d.in-addr-servers.arpa. (51)
     IP 172.31.44.118.48606 > 192.33.4.12.53: 63719% [1au] A? e.in-addr-servers.arpa. (51)
     IP 172.31.44.118.36802 > 192.33.4.12.53: 11286% [1au] AAAA? e.in-addr-servers.arpa. (51)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.34841 > 196.216.169.10.53: 2653% [1au] A? e.in-addr-servers.arpa. (51)
     IP 172.31.44.118.55480 > 196.216.169.10.53: 50364% [1au] AAAA? e.in-addr-servers.arpa. (51)
+
+DNS Query to c.root-servers.net. (Cogent Communications)
     IP 172.31.44.118.56147 > 192.33.4.12.53: 34111% [1au] A? f.in-addr-servers.arpa. (51)
     IP 172.31.44.118.43369 > 192.33.4.12.53: 27793% [1au] AAAA? f.in-addr-servers.arpa. (51)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.44543 > 196.216.169.10.53: 5144% [1au] A? f.in-addr-servers.arpa. (51)
     IP 172.31.44.118.60911 > 196.216.169.10.53: 425% [1au] AAAA? f.in-addr-servers.arpa. (51)
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [P.], seq 1:31, ack 1, win 229, length 3016413 [1au] NS? . (28)
+    <TCP with h.root-servers.net.>
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.39863 > 196.216.169.10.53: 13143% [1au] AAAA? c.in-addr-servers.arpa. (51)
+
+DNS Response c.root-servers.net. (Cogent Communications)
     IP 192.33.4.12.53 > 172.31.44.118.57350: 9688- 0/10/4 (501)
     IP 192.33.4.12.53 > 172.31.44.118.50380: 20783- 0/10/3 (497)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.43034 > 196.216.169.10.53: 17559% [1au] A? d.in-addr-servers.arpa. (51)
+
+DNS Response c.root-servers.net. (Cogent Communications)
     IP 192.33.4.12.53 > 172.31.44.118.36802: 11286- 0/10/3 (497)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.50124 > 196.216.169.10.53: 33471% [1au] AAAA? d.in-addr-servers.arpa. (51)
+
+DNS Response c.root-servers.net. (Cogent Communications)
     IP 192.33.4.12.53 > 172.31.44.118.48606: 63719- 0/10/4 (501)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.57765 > 196.216.169.10.53: 24338% [1au] AAAA? e.in-addr-servers.arpa. (51)
+
+DNS Response c.root-servers.net. (Cogent Communications)
     IP 192.33.4.12.53 > 172.31.44.118.43369: 27793- 0/10/3 (497)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.37236 > 196.216.169.10.53: 43900% [1au] A? e.in-addr-servers.arpa. (51)
+
+DNS Response c.root-servers.net. (Cogent Communications)
     IP 192.33.4.12.53 > 172.31.44.118.56147: 34111- 0/10/4 (501)
-    IP 198.97.190.53.53 > 172.31.44.118.42115: Flags [.], ack 31, win 6, length 0
-    IP 198.97.190.53.53 > 172.31.44.118.42115: Flags [P.], seq 1:1100, ack 31, win 6, length 109916413*- 14/0/27 NS a.root-servers.net., NS b.root-servers.net., NS c.root-servers.net., NS d.root-servers.net., NS e.root-servers.net., NS f.root-servers.net., NS g.root-servers.net., NS h.root-servers.net., NS i.root-servers.net., NS j.root-servers.net., NS k.root-servers.net., NS l.root-servers.net., NS m.root-servers.net., RRSIG (1097)
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [.], ack 1100, win 246, length 0
+    <TCP with h.root-servers.net.>
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.44118 > 196.216.169.10.53: 39626% [1au] AAAA? f.in-addr-servers.arpa. (51)
     IP 172.31.44.118.36259 > 196.216.169.10.53: 26492% [1au] A? f.in-addr-servers.arpa. (51)
+
+DNS Query to e.root-servers.net. (NASA)
     IP 172.31.44.118.47853 > 192.203.230.10.53: 11637% [1au] AAAA? a.in-addr-servers.arpa. (51)
     IP 172.31.44.118.50278 > 192.203.230.10.53: 21668% [1au] AAAA? b.in-addr-servers.arpa. (51)
     IP 172.31.44.118.41668 > 192.203.230.10.53: 8365% [1au] AAAA? c.in-addr-servers.arpa. (51)
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [F.], seq 31, ack 1100, win 246, length 0
+    <TCP with h.root-servers.net.>
+
+DNS Response e.root-servers.net. (NASA)
     IP 192.203.230.10.53 > 172.31.44.118.47853: 11637- 0/10/4 (501)
     IP 192.203.230.10.53 > 172.31.44.118.50278: 21668- 0/10/4 (501)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.39868 > 196.216.169.10.53: 3842% [1au] AAAA? a.in-addr-servers.arpa. (51)
+
+DNS Response e.root-servers.net. (NASA)
     IP 192.203.230.10.53 > 172.31.44.118.41668: 8365- 0/10/4 (501)
+
+DNS Query to c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.42904 > 196.216.169.10.53: 17170% [1au] AAAA? b.in-addr-servers.arpa. (51)
     IP 172.31.44.118.34789 > 196.216.169.10.53: 50230% [1au] AAAA? c.in-addr-servers.arpa. (51)
+
+DNS Response a.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 199.180.182.53.53 > 172.31.44.118.43243: 18048- 0/8/1 (385)
+
+DNS Query to l.gtld-servers.net. (Verisign)
     IP 172.31.44.118.43643 > 192.41.162.30.53: 10804% [1au] A? x.arin.net. (39)
     IP 172.31.44.118.58723 > 192.41.162.30.53: 41633% [1au] AAAA? x.arin.net. (39)
     IP 172.31.44.118.44037 > 192.41.162.30.53: 22111% [1au] A? r.arin.net. (39)
@@ -76,6 +138,8 @@ Reverse DNS lookup for 199.233.217.205
     IP 172.31.44.118.48883 > 192.41.162.30.53: 40268% [1au] AAAA? z.arin.net. (39)
     IP 172.31.44.118.38505 > 192.41.162.30.53: 4537% [1au] A? arin.authdns.ripe.net. (50)
     IP 172.31.44.118.45957 > 192.41.162.30.53: 6845% [1au] AAAA? arin.authdns.ripe.net. (50)
+
+DNS Response l.gtld-servers.net (Verisign)
     IP 192.41.162.30.53 > 172.31.44.118.43643: 10804- 0/7/8 (504)
     IP 192.41.162.30.53 > 172.31.44.118.58723: 41633- 0/7/8 (504)
     IP 192.41.162.30.53 > 172.31.44.118.54400: 41618- 0/7/8 (504)
@@ -85,78 +149,162 @@ Reverse DNS lookup for 199.233.217.205
     IP 192.41.162.30.53 > 172.31.44.118.33312: 51629- 0/7/8 (504)
     IP 192.41.162.30.53 > 172.31.44.118.46240: 37017- 0/7/8 (502)
     IP 192.41.162.30.53 > 172.31.44.118.48883: 40268- 0/7/8 (504)
+
+DNS Query to ns3.arin.net. (ARIN)
     IP 172.31.44.118.54509 > 199.5.26.108.53: 64660% [1au] A? x.arin.net. (39)
+
+DNS Response l.gtld-servers.net (Verisign)
     IP 192.41.162.30.53 > 172.31.44.118.45957: 6845- 0/9/4 (497)
     IP 192.41.162.30.53 > 172.31.44.118.52272: 43953- 0/7/8 (504)
     IP 192.41.162.30.53 > 172.31.44.118.38505: 4537- 0/9/4 (497)
+
+DNS Query to ns3.arin.net. (ARIN)
     IP 172.31.44.118.45829 > 199.5.26.108.53: 52482% [1au] AAAA? x.arin.net. (39)
+
+DNS Query to e.root-servers.net. (NASA)
     IP 172.31.44.118.37677 > 192.203.230.10.53: 65529% [1au] AAAA? ns3.arin.net. (41)
+
+DNS Query to ns3.arin.net. (ARIN)
     IP 172.31.44.118.46612 > 199.5.26.108.53: 48896% [1au] A? y.arin.net. (39)
     IP 172.31.44.118.58823 > 199.5.26.108.53: 10756% [1au] AAAA? y.arin.net. (39)
     IP 172.31.44.118.39528 > 199.5.26.108.53: 35762% [1au] A? r.arin.net. (39)
+
+DNS Response e.root-servers.net. (NASA)
     IP 192.203.230.10.53 > 172.31.44.118.37677: 65529- 0/15/27 (1169)
+
+DNS Query to ns3.arin.net. (ARIN)
     IP 172.31.44.118.45402 > 199.5.26.108.53: 33920% [1au] AAAA? r.arin.net. (39)
     IP 172.31.44.118.40513 > 199.5.26.108.53: 39430% [1au] A? u.arin.net. (39)
     IP 172.31.44.118.43186 > 199.5.26.108.53: 11835% [1au] AAAA? u.arin.net. (39)
+
+DNS Query to e.root-servers.net. (NASA)
     IP 172.31.44.118.35553 > 192.203.230.10.53: 56466% [1au] A? manus.authdns.ripe.net. (51)
     IP 172.31.44.118.54339 > 192.203.230.10.53: 23198% [1au] AAAA? manus.authdns.ripe.net. (51)
+
+DNS Response e.root-servers.net. (NASA)
     IP 192.203.230.10.53 > 172.31.44.118.35553: 56466- 0/15/27 (1179)
+
+DNS Query to tinnie.arin.net. (ARIN)
     IP 172.31.44.118.56725 > 199.212.0.53.53: 11131% [1au] AAAA? arin.authdns.ripe.net. (50)
+
+DNS Response e.root-servers.net. (NASA)
     IP 192.203.230.10.53 > 172.31.44.118.54339: 23198- 0/15/27 (1179)
+
+DNS Query to ns3.arin.net. (ARIN)
     IP 172.31.44.118.54133 > 199.5.26.108.53: 21223% [1au] A? z.arin.net. (39)
     IP 172.31.44.118.35701 > 199.5.26.108.53: 28650% [1au] AAAA? z.arin.net. (39)
+
+DNS Query to m.gtld-servers.net. (Verisign)
     IP 172.31.44.118.52931 > 192.55.83.30.53: 39285% [1au] A? ns4.apnic.net. (42)
     IP 172.31.44.118.34620 > 192.55.83.30.53: 51019% [1au] A? a1.verisigndns.com. (47)
+
+DNS Response tinnie.arin.net. (ARIN)
     IP 199.212.0.53.53 > 172.31.44.118.56725: 11131*- 2/0/1 AAAA 2001:67c:e0::10, RRSIG (246)
+
+DNS Query to m.gtld-servers.net. (Verisign)
     IP 172.31.44.118.59029 > 192.55.83.30.53: 30085% [1au] AAAA? a1.verisigndns.com. (47)
     IP 172.31.44.118.42558 > 192.55.83.30.53: 18211% [1au] A? a2.verisigndns.com. (47)
     IP 172.31.44.118.48420 > 192.55.83.30.53: 11107% [1au] AAAA? a2.verisigndns.com. (47)
     IP 172.31.44.118.49145 > 192.55.83.30.53: 12437% [1au] AAAA? ns3.arin.net. (41)
     IP 172.31.44.118.55112 > 192.55.83.30.53: 36458% [1au] A? a3.verisigndns.com. (47)
     IP 172.31.44.118.42861 > 192.55.83.30.53: 25095% [1au] AAAA? a3.verisigndns.com. (47)
+
+DNS Query to b0.org.afilias-nst.org. (Afilias Limited)
     IP 172.31.44.118.47583 > 199.19.54.1.53: 61218% [1au] A? sns-pb.isc.org. (43)
     IP 172.31.44.118.45452 > 199.19.54.1.53: 52915% [1au] AAAA? sns-pb.isc.org. (43)
+
+DNS Query to tinnie.arin.net. (ARIN)
     IP 172.31.44.118.45483 > 199.212.0.53.53: 9096% [1au] A? arin.authdns.ripe.net. (50)
+
+DNS Query to m.gtld-servers.net. (Verisign)
     IP 172.31.44.118.40945 > 192.55.83.30.53: 3684% [1au] A? manus.authdns.ripe.net. (51)
     IP 172.31.44.118.39623 > 192.55.83.30.53: 40304% [1au] AAAA? manus.authdns.ripe.net. (51)
+
+DNS Response tinnie.arin.net. (ARIN)
     IP 199.212.0.53.53 > 172.31.44.118.45483: 9096*- 2/0/1 A 193.0.9.10, RRSIG (234)
+
+DNS Query to and Response u.arin.net (ARIN)
     IP 172.31.44.118.37102 > 204.61.216.50.53: 56079 [1au] PTR? 205.217.233.199.in-addr.arpa. (57)
     IP 204.61.216.50.53 > 172.31.44.118.37102: 56079- 0/4/1 (341)
+
+DNS Query to m.gtld-servers.net. (Verisign)
     IP 172.31.44.118.59665 > 192.55.83.30.53: 33161% [1au] A? ns.tastylime.net. (45)
     IP 172.31.44.118.53564 > 192.55.83.30.53: 18192% [1au] AAAA? ns.tastylime.net. (45)
     IP 172.31.44.118.55258 > 192.55.83.30.53: 24712% [1au] A? ns2.prestidigital.net. (50)
     IP 172.31.44.118.36540 > 192.55.83.30.53: 567% [1au] AAAA? ns2.prestidigital.net. (50)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.34620: 51019- 0/8/8 (505)
     IP 192.55.83.30.53 > 172.31.44.118.59029: 30085- 0/8/8 (505)
     IP 192.55.83.30.53 > 172.31.44.118.52931: 39285- 0/10/4 (507)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.45887 > 69.36.145.33.53: 25116% [1au] A? a1.verisigndns.com. (47)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.42558: 18211- 0/8/8 (505)
     IP 192.55.83.30.53 > 172.31.44.118.55112: 36458- 0/8/8 (505)
+
+DNS Query to f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 172.31.44.118.52152 > 192.5.5.241.53: 35193% [1au] A? u2.verisigndns.com. (47)
     IP 172.31.44.118.44326 > 192.5.5.241.53: 54435% [1au] AAAA? u2.verisigndns.com. (47)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.48420: 11107- 0/8/8 (505)
+
+DNS Query to f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 172.31.44.118.59829 > 192.5.5.241.53: 32330% [1au] A? u3.verisigndns.com. (47)
     IP 172.31.44.118.39181 > 192.5.5.241.53: 64692% [1au] AAAA? u3.verisigndns.com. (47)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.58110 > 69.36.145.33.53: 60295% [1au] AAAA? a1.verisigndns.com. (47)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.49145: 12437- 0/7/8 (502)
+
+DNS Response f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 192.5.5.241.53 > 172.31.44.118.52152: 35193- 0/15/27 (1178)
     IP 192.5.5.241.53 > 172.31.44.118.44326: 54435- 0/15/27 (1178)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.42861: 25095- 0/8/8 (505)
+
+DNS Response f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 192.5.5.241.53 > 172.31.44.118.39181: 64692- 0/15/27 (1178)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.39623: 40304- 0/9/5 (508)
+
+DNS Response f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 192.5.5.241.53 > 172.31.44.118.59829: 32330- 0/15/27 (1178)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.40945: 3684- 0/9/5 (508)
+
+DNS Query to cumin.apnic.net. (APNIC)
     IP 172.31.44.118.57419 > 202.12.29.59.53: 9832% [1au] A? ns4.apnic.net. (42)
+
+DNS Query to f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 172.31.44.118.36606 > 192.5.5.241.53: 25843% [1au] A? ns1.apnic.net. (42)
     IP 172.31.44.118.48865 > 192.5.5.241.53: 3444% [1au] AAAA? ns1.apnic.net. (42)
     IP 172.31.44.118.41923 > 192.5.5.241.53: 28611% [1au] A? ns2.apnic.net. (42)
     IP 172.31.44.118.50997 > 192.5.5.241.53: 39004% [1au] AAAA? ns2.apnic.net. (42)
     IP 172.31.44.118.57144 > 192.5.5.241.53: 36499% [1au] A? ns3.apnic.net. (42)
     IP 172.31.44.118.37865 > 192.5.5.241.53: 1448% [1au] AAAA? ns3.apnic.net. (42)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.59665: 33161-| 0/5/3 (431)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.52590 > 69.36.145.33.53: 2166% [1au] A? apnic.authdns.ripe.net. (51)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.36540: 567-| 0/7/2 (509)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.50648 > 69.36.145.33.53: 39761% [1au] AAAA? apnic.authdns.ripe.net. (51)
+
+DNS Response f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 192.5.5.241.53 > 172.31.44.118.36606: 25843- 0/15/27 (1170)
     IP 192.5.5.241.53 > 172.31.44.118.48865: 3444- 0/15/27 (1170)
     IP 172.31.44.118.41541 > 192.5.5.241.53: 44710% [1au] A? netnod.apnic.net. (45)
@@ -165,303 +313,337 @@ Reverse DNS lookup for 199.233.217.205
     IP 192.5.5.241.53 > 172.31.44.118.57144: 36499- 0/15/27 (1170)
     IP 172.31.44.118.34583 > 192.5.5.241.53: 28827% [1au] AAAA? netnod.apnic.net. (45)
     IP 192.5.5.241.53 > 172.31.44.118.37865: 1448- 0/15/27 (1170)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.53564: 18192-| 0/5/3 (431)
+
+DNS Query to f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 172.31.44.118.59444 > 192.5.5.241.53: 21692% [1au] A? sec3.apnic.net. (43)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.43464 > 69.36.145.33.53: 23108% [1au] A? a2.verisigndns.com. (47)
+
+DNS Response m.gtld-servers.net. (Verisign)
     IP 192.55.83.30.53 > 172.31.44.118.55258: 24712-| 0/7/2 (509)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.40226 > 69.36.145.33.53: 61110% [1au] AAAA? a2.verisigndns.com. (47)
+
+DNS Response f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 192.5.5.241.53 > 172.31.44.118.41541: 44710- 0/15/27 (1173)
+
+DNS Query to ns3.arin.net. (ARIN)
     IP 172.31.44.118.34563 > 199.5.26.108.53: 54821% [1au] AAAA? ns3.arin.net. (41)
+
+DNS Response f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 192.5.5.241.53 > 172.31.44.118.34583: 28827- 0/15/27 (1173)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.45349 > 69.36.145.33.53: 55717% [1au] A? a3.verisigndns.com. (47)
+
+DNS Response f.root-servers.net. (Internet Systems Consortium, Inc.)
     IP 192.5.5.241.53 > 172.31.44.118.59444: 21692- 0/15/27 (1171)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.46012 > 69.36.145.33.53: 7350% [1au] AAAA? a3.verisigndns.com. (47)
+
+DNS Query to j.gtld-servers.net.(Verisign)
     IP 172.31.44.118.42499 > 192.48.79.30.53: 10216% [1au] A? u3.verisigndns.com. (47)
     IP 172.31.44.118.45690 > 192.48.79.30.53: 20324% [1au] AAAA? u3.verisigndns.com. (47)
     IP 172.31.44.118.53674 > 192.48.79.30.53: 19659% [1au] A? u2.verisigndns.com. (47)
     IP 172.31.44.118.40015 > 192.48.79.30.53: 30360% [1au] AAAA? u2.verisigndns.com. (47)
+
+DNS Query to no name (APNIC)
     IP 172.31.44.118.39655 > 202.12.31.140.53: 4161% [1au] AAAA? manus.authdns.ripe.net. (51)
     IP 172.31.44.118.42237 > 202.12.31.140.53: 55097% [1au] A? manus.authdns.ripe.net. (51)
-    IP 172.31.44.118.39271 > 192.55.83.30.53: Flags [S], seq 1052828895, win 29200, options [mss 1460,sackOK,TS val 698298 ecr 0,nop,wscale 7], length 0
-    IP 172.31.44.118.54443 > 192.55.83.30.53: Flags [S], seq 614225545, win 29200, options [mss 1460,sackOK,TS val 698298 ecr 0,nop,wscale 7], length 0
-    IP 172.31.44.118.58953 > 192.55.83.30.53: Flags [S], seq 2911570654, win 29200, options [mss 1460,sackOK,TS val 698298 ecr 0,nop,wscale 7], length 0
+    <TCP with m.gtld-servers.net.>
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.52460: 21016*- 2/0/1 A 200.10.60.53, RRSIG (247)
+
+DNS Query to j.gtld-servers.net.(Verisign)
     IP 172.31.44.118.55940 > 192.48.79.30.53: 56367% [1au] A? ns1.apnic.net. (42)
     IP 172.31.44.118.47881 > 192.48.79.30.53: 47335% [1au] AAAA? ns1.apnic.net. (42)
     IP 172.31.44.118.39521 > 192.48.79.30.53: 22387% [1au] A? ns2.apnic.net. (42)
     IP 172.31.44.118.35418 > 192.48.79.30.53: 10093% [1au] AAAA? ns2.apnic.net. (42)
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.34841: 2653*- 2/0/1 A 203.119.86.101, RRSIG (247)
+
+DNS Query to j.gtld-servers.net.(Verisign)
     IP 172.31.44.118.54786 > 192.48.79.30.53: 50675% [1au] A? ns3.apnic.net. (42)
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.40683: 65442*- 2/0/1 A 196.216.169.10, RRSIG (247)
+
+DNS Query to j.gtld-servers.net.(Verisign)
     IP 172.31.44.118.48406 > 192.48.79.30.53: 34552% [1au] AAAA? ns3.apnic.net. (42)
-    IP 172.31.44.118.39579 > 192.55.83.30.53: Flags [S], seq 379992762, win 29200, options [mss 1460,sackOK,TS val 698299 ecr 0,nop,wscale 7], length 0
+    <TCP with m.gtld-servers.net.>
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.44543: 5144*- 2/0/1 A 193.0.9.1, RRSIG (247)
     IP 196.216.169.10.53 > 172.31.44.118.60911: 425*- 2/0/1 AAAA 2001:67c:e0::1, RRSIG (259)
     IP 196.216.169.10.53 > 172.31.44.118.45604: 10184*- 2/0/1 AAAA 2001:13c7:7010::53, RRSIG (259)
+
+DNS Response j.gtld-servers.net.(Verisign)
     IP 192.48.79.30.53 > 172.31.44.118.42499: 10216- 0/8/8 (505)
+
+DNS Query to j.gtld-servers.net.(Verisign)
     IP 172.31.44.118.47079 > 192.48.79.30.53: 22199% [1au] A? netnod.apnic.net. (45)
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.39863: 13143*- 2/0/1 AAAA 2001:43f8:110::10, RRSIG (259)
+
+DNS Response j.gtld-servers.net.(Verisign)
     IP 192.48.79.30.53 > 172.31.44.118.40015: 30360- 0/8/8 (505)
     IP 192.48.79.30.53 > 172.31.44.118.53674: 19659- 0/8/8 (505)
     IP 172.31.44.118.41822 > 192.48.79.30.53: 11397% [1au] AAAA? netnod.apnic.net. (45)
     IP 192.48.79.30.53 > 172.31.44.118.45690: 20324- 0/8/8 (505)
     IP 172.31.44.118.33067 > 192.48.79.30.53: 18854% [1au] A? sec3.apnic.net. (43)
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.55480: 50364*- 2/0/1 AAAA 2001:dd8:6::101, RRSIG (259)
     IP 196.216.169.10.53 > 172.31.44.118.43034: 17559*- 2/0/1 A 200.10.60.53, RRSIG (247)
     IP 196.216.169.10.53 > 172.31.44.118.50124: 33471*- 2/0/1 AAAA 2001:13c7:7010::53, RRSIG (259)
     IP 196.216.169.10.53 > 172.31.44.118.57765: 24338*- 2/0/1 AAAA 2001:dd8:6::101, RRSIG (259)
+
+DNS Response j.gtld-servers.net.(Verisign)
     IP 192.48.79.30.53 > 172.31.44.118.55940: 56367- 0/10/4 (503)
     IP 192.48.79.30.53 > 172.31.44.118.47881: 47335- 0/10/4 (503)
     IP 192.48.79.30.53 > 172.31.44.118.39521: 22387- 0/10/4 (503)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.35716 > 69.36.145.33.53: 3584% [1au] A? u3.verisigndns.com. (47)
     IP 172.31.44.118.34157 > 69.36.145.33.53: 54054% [1au] AAAA? u3.verisigndns.com. (47)
+
+DNS Response j.gtld-servers.net.(Verisign)
     IP 192.48.79.30.53 > 172.31.44.118.54786: 50675- 0/10/4 (503)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.44928 > 69.36.145.33.53: 901% [1au] AAAA? u2.verisigndns.com. (47)
+
+DNS Response j.gtld-servers.net.(Verisign)
     IP 192.48.79.30.53 > 172.31.44.118.35418: 10093- 0/10/4 (503)
+
+DNS Query to multiple names (Verisign)
     IP 172.31.44.118.40104 > 69.36.145.33.53: 29915% [1au] A? u2.verisigndns.com. (47)
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.44118: 39626*- 2/0/1 AAAA 2001:67c:e0::1, RRSIG (259)
     IP 196.216.169.10.53 > 172.31.44.118.37236: 43900*- 2/0/1 A 203.119.86.101, RRSIG (247)
+
+DNS Response j.gtld-servers.net.(Verisign)
     IP 192.48.79.30.53 > 172.31.44.118.47079: 22199- 0/10/4 (503)
     IP 192.48.79.30.53 > 172.31.44.118.41822: 11397- 0/10/4 (503)
     IP 192.48.79.30.53 > 172.31.44.118.48406: 34552- 0/10/4 (503)
+
+DNS Query to cumin.apnic.net. (APNIC)
     IP 172.31.44.118.38428 > 202.12.29.59.53: 21967% [1au] A? ns1.apnic.net. (42)
     IP 172.31.44.118.46237 > 202.12.29.59.53: 10310% [1au] AAAA? ns1.apnic.net. (42)
     IP 172.31.44.118.58290 > 202.12.29.59.53: 59448% [1au] A? ns2.apnic.net. (42)
     IP 172.31.44.118.56942 > 202.12.29.59.53: 53454% [1au] AAAA? ns2.apnic.net. (42)
+
+DNS Response multiple names (Verisign)
     IP 69.36.145.33.53 > 172.31.44.118.45887: 25116*- 2/7/1 A 209.112.113.33, RRSIG (512)
+
+DNS Query to cumin.apnic.net. (APNIC)
     IP 172.31.44.118.37135 > 202.12.29.59.53: 15348% [1au] A? ns3.apnic.net. (42)
+
+DNS Response j.gtld-servers.net.(Verisign)
     IP 192.48.79.30.53 > 172.31.44.118.33067: 18854- 0/10/4 (503)
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.39868: 3842*- 2/0/1 AAAA 2620:37:e000::53, RRSIG (259)
     IP 196.216.169.10.53 > 172.31.44.118.36259: 26492*- 2/0/1 A 193.0.9.1, RRSIG (247)
+
+DNS Query to cumin.apnic.net. (APNIC)
     IP 172.31.44.118.38913 > 202.12.29.59.53: 798% [1au] A? netnod.apnic.net. (45)
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.34789: 50230*- 2/0/1 AAAA 2001:43f8:110::10, RRSIG (259)
+
+DNS Query to cumin.apnic.net. (APNIC)
     IP 172.31.44.118.52635 > 202.12.29.59.53: 12337% [1au] AAAA? netnod.apnic.net. (45)
     IP 172.31.44.118.34557 > 202.12.29.59.53: 8414% [1au] AAAA? ns3.apnic.net. (42)
     IP 172.31.44.118.37267 > 202.12.29.59.53: 40131% [1au] A? sec3.apnic.net. (43)
+
+DNS Response multiple names (Verisign)
     IP 69.36.145.33.53 > 172.31.44.118.58110: 60295*-| 2/6/8 AAAA 2001:500:7967::2:33, RRSIG (497)
-    IP 172.31.44.118.55081 > 69.36.145.33.53: Flags [S], seq 2617915900, win 29200, options [mss 1460,sackOK,TS val 698301 ecr 0,nop,wscale 7], length 0
+    <TCP with multiple names>
+
+DNS Response c.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 196.216.169.10.53 > 172.31.44.118.42904: 17170*- 2/0/1 AAAA 2001:500:87::87, RRSIG (259)
-    IP 192.55.83.30.53 > 172.31.44.118.39271: Flags [S.], seq 1732546015, ack 1052828896, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.39271 > 192.55.83.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.39271 > 192.55.83.30.53: Flags [P.], seq 1:53, ack 1, win 29200, length 5242335% [1au] AAAA? ns2.prestidigital.net. (50)
-    IP 192.55.83.30.53 > 172.31.44.118.54443: Flags [S.], seq 2876318339, ack 614225546, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.54443 > 192.55.83.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.54443 > 192.55.83.30.53: Flags [P.], seq 1:48, ack 1, win 29200, length 4731599% [1au] A? ns.tastylime.net. (45)
-    IP 192.55.83.30.53 > 172.31.44.118.58953: Flags [S.], seq 2449007709, ack 2911570655, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.58953 > 192.55.83.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 69.36.145.33.53 > 172.31.44.118.52590: 2166*-| 2/7/3 A 193.0.9.9, RRSIG (443)
-    IP 172.31.44.118.58953 > 192.55.83.30.53: Flags [P.], seq 1:48, ack 1, win 29200, length 4754925% [1au] AAAA? ns.tastylime.net. (45)
-    IP 172.31.44.118.33571 > 69.36.145.33.53: Flags [S], seq 1449077870, win 29200, options [mss 1460,sackOK,TS val 698302 ecr 0,nop,wscale 7], length 0
+    <TCP with m.gtld-servers.net.>
+    <TCP with multiple names>
+
+DNS Response multiple names (Verisign)
     IP 69.36.145.33.53 > 172.31.44.118.50648: 39761*-| 2/7/3 AAAA 2001:67c:e0::9, RRSIG (455)
-    IP 172.31.44.118.37331 > 69.36.145.33.53: Flags [S], seq 1947251314, win 29200, options [mss 1460,sackOK,TS val 698302 ecr 0,nop,wscale 7], length 0
-    IP 192.55.83.30.53 > 172.31.44.118.39579: Flags [S.], seq 763995972, ack 379992763, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.39579 > 192.55.83.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.39579 > 192.55.83.30.53: Flags [P.], seq 1:53, ack 1, win 29200, length 525612% [1au] A? ns2.prestidigital.net. (50)
+    <TCP with multiple names>
+    <TCP with m.gtld-servers.net.>
     IP 69.36.145.33.53 > 172.31.44.118.43464: 23108*- 2/7/1 A 209.112.114.33, RRSIG (512)
     IP 69.36.145.33.53 > 172.31.44.118.40226: 61110*-| 2/6/8 AAAA 2620:74:19::33, RRSIG (497)
-    IP 172.31.44.118.52347 > 69.36.145.33.53: Flags [S], seq 845435677, win 29200, options [mss 1460,sackOK,TS val 698302 ecr 0,nop,wscale 7], length 0
+    <TCP with multiple names>
     IP 69.36.145.33.53 > 172.31.44.118.45349: 55717*- 2/7/1 A 69.36.145.33, RRSIG (512)
     IP 69.36.145.33.53 > 172.31.44.118.46012: 7350*-| 2/6/8 AAAA 2001:502:cbe4::33, RRSIG (497)
-    IP 172.31.44.118.34741 > 69.36.145.33.53: Flags [S], seq 4114198218, win 29200, options [mss 1460,sackOK,TS val 698303 ecr 0,nop,wscale 7], length 0
+    <TCP with multiple names>
     IP 69.36.145.33.53 > 172.31.44.118.35716: 3584*- 2/7/1 A 69.36.145.33, RRSIG (512)
-    IP 192.55.83.30.53 > 172.31.44.118.39271: Flags [P.], seq 1:835, ack 53, win 65535, length 83442335- 0/8/9 (832)
-    IP 172.31.44.118.39271 > 192.55.83.30.53: Flags [.], ack 835, win 30858, length 0
+    <TCP with m.gtld-servers.net.>
     IP 69.36.145.33.53 > 172.31.44.118.34157: 54054*-| 2/6/8 AAAA 2001:502:cbe4::33, RRSIG (497)
     IP 69.36.145.33.53 > 172.31.44.118.44928: 901*-| 2/6/8 AAAA 2620:74:19::33, RRSIG (497)
     IP 69.36.145.33.53 > 172.31.44.118.40104: 29915*- 2/7/1 A 209.112.114.33, RRSIG (512)
-    IP 192.55.83.30.53 > 172.31.44.118.54443: Flags [P.], seq 1:597, ack 48, win 65535, length 59631599- 0/6/3 (594)
-    IP 172.31.44.118.54443 > 192.55.83.30.53: Flags [.], ack 597, win 29800, length 0
-    IP 172.31.44.118.39271 > 192.55.83.30.53: Flags [F.], seq 53, ack 835, win 30858, length 0
-    IP 172.31.44.118.39977 > 69.36.145.33.53: Flags [S], seq 1258931387, win 29200, options [mss 1460,sackOK,TS val 698305 ecr 0,nop,wscale 7], length 0
-    IP 192.55.83.30.53 > 172.31.44.118.39579: Flags [P.], seq 1:835, ack 53, win 65535, length 8345612- 0/8/9 (832)
-    IP 172.31.44.118.39579 > 192.55.83.30.53: Flags [.], ack 835, win 30858, length 0
-    IP 192.55.83.30.53 > 172.31.44.118.58953: Flags [P.], seq 1:597, ack 48, win 65535, length 59654925- 0/6/3 (594)
-    IP 172.31.44.118.58953 > 192.55.83.30.53: Flags [.], ack 597, win 29800, length 0
+    <TCP with m.gtld-servers.net.>
+    <TCP with multiple names>
+    <TCP with m.gtld-servers.net.>
+
+DNS Query to e.gtld-servers.net. (Verisign)
     IP 172.31.44.118.44042 > 192.12.94.30.53: 48094% [1au] A? ns-cloud-c3.googledomains.com. (58)
     IP 172.31.44.118.46555 > 192.12.94.30.53: 8461% [1au] AAAA? ns-cloud-c3.googledomains.com. (58)
-    IP 69.36.145.33.53 > 172.31.44.118.55081: Flags [S.], seq 4155406521, ack 2617915901, win 14480, options [mss 1460,sackOK,TS val 2075685726 ecr 698301,nop,wscale 7], length 0
-    IP 172.31.44.118.55081 > 69.36.145.33.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698306 ecr 2075685726], length 0
+    <TCP with multiple names>
     IP 172.31.44.118.38874 > 192.12.94.30.53: 42706% [1au] A? ns-cloud-c4.googledomains.com. (58)
     IP 172.31.44.118.40520 > 192.12.94.30.53: 11287% [1au] AAAA? ns-cloud-c4.googledomains.com. (58)
     IP 172.31.44.118.34868 > 192.12.94.30.53: 9843% [1au] AAAA? ns-cloud-c1.googledomains.com. (58)
     IP 172.31.44.118.33579 > 192.12.94.30.53: 56734% [1au] A? ns-cloud-c1.googledomains.com. (58)
+
+DNS Response ns3.arin.net. (ARIN)
     IP 199.5.26.108.53 > 172.31.44.118.54509: 64660*- 2/0/1 A 199.71.0.63, RRSIG (223)
+
+DNS Query to e.gtld-servers.net. (Verisign)
     IP 172.31.44.118.57580 > 192.12.94.30.53: 24781% [1au] A? ns-cloud-c2.googledomains.com. (58)
-    IP 69.36.145.33.53 > 172.31.44.118.33571: Flags [S.], seq 270273225, ack 1449077871, win 14480, options [mss 1460,sackOK,TS val 2075685729 ecr 698302,nop,wscale 7], length 0
-    IP 172.31.44.118.33571 > 69.36.145.33.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698307 ecr 2075685729], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.37331: Flags [S.], seq 939509512, ack 1947251315, win 14480, options [mss 1460,sackOK,TS val 2075681240 ecr 698302,nop,wscale 7], length 0
-    IP 172.31.44.118.37331 > 69.36.145.33.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698307 ecr 2075681240], length 0
+    <TCP with multiple names>
     IP 172.31.44.118.40807 > 192.12.94.30.53: 59679% [1au] AAAA? ns-cloud-c2.googledomains.com. (58)
+
+DNS Query to fnord.tastylime.net. (Private)
     IP 172.31.44.118.38376 > 199.233.217.2.53: 61443% [1au] A? ns.tastylime.net. (45)
+
+DNS Response ns3.arin.net. (ARIN)
     IP 199.5.26.108.53 > 172.31.44.118.45829: 52482*- 2/0/1 AAAA 2001:500:31::63, RRSIG (235)
-    IP 172.31.44.118.55081 > 69.36.145.33.53: Flags [P.], seq 1:50, ack 1, win 229, options [nop,nop,TS val 698307 ecr 2075685726], length 4913177% [1au] AAAA? a1.verisigndns.com. (47)
-    IP 172.31.44.118.33571 > 69.36.145.33.53: Flags [P.], seq 1:54, ack 1, win 229, options [nop,nop,TS val 698307 ecr 2075685729], length 5363782% [1au] A? apnic.authdns.ripe.net. (51)
-    IP 172.31.44.118.37331 > 69.36.145.33.53: Flags [P.], seq 1:54, ack 1, win 229, options [nop,nop,TS val 698307 ecr 2075681240], length 5344755% [1au] AAAA? apnic.authdns.ripe.net. (51)
-    IP 172.31.44.118.39963 > 69.36.145.33.53: Flags [S], seq 3014235079, win 29200, options [mss 1460,sackOK,TS val 698307 ecr 0,nop,wscale 7], length 0
+    <TCP with multiple names>
+
+DNS Response ns3.arin.net. (ARIN)
     IP 199.5.26.108.53 > 172.31.44.118.46612: 48896*- 2/0/1 A 192.82.134.30, RRSIG (223)
-    IP 172.31.44.118.54443 > 192.55.83.30.53: Flags [F.], seq 48, ack 597, win 29800, length 0
+    <TCP with m.gtld-servers.net.>
+
+DNS Response ns3.arin.net. (ARIN)
     IP 199.5.26.108.53 > 172.31.44.118.39528: 35762*- 2/0/1 A 199.180.180.63, RRSIG (223)
     IP 199.5.26.108.53 > 172.31.44.118.58823: 10756*- 2/0/1 AAAA 2001:500:127::30, RRSIG (235)
     IP 199.5.26.108.53 > 172.31.44.118.54133: 21223*- 2/0/1 A 199.212.0.63, RRSIG (223)
+
+DNS Query to fnord.tastylime.net. (Private)
     IP 172.31.44.118.56602 > 199.233.217.2.53: 33212% [1au] AAAA? ns.tastylime.net. (45)
-    IP 172.31.44.118.39579 > 192.55.83.30.53: Flags [F.], seq 53, ack 835, win 30858, length 0
-    IP 69.36.145.33.53 > 172.31.44.118.34741: Flags [S.], seq 2314827579, ack 4114198219, win 14480, options [mss 1460,sackOK,TS val 2075681242 ecr 698303,nop,wscale 7], length 0
-    IP 172.31.44.118.34741 > 69.36.145.33.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698307 ecr 2075681242], length 0
-    IP 172.31.44.118.58953 > 192.55.83.30.53: Flags [F.], seq 48, ack 597, win 29800, length 0
-    IP 69.36.145.33.53 > 172.31.44.118.52347: Flags [S.], seq 2226503089, ack 845435678, win 14480, options [mss 1460,sackOK,TS val 2075685731 ecr 698302,nop,wscale 7], length 0
-    IP 172.31.44.118.52347 > 69.36.145.33.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698307 ecr 2075685731], length 0
+    <TCP with m.gtld-servers.net.>
+    <TCP with multiple names>
+    <TCP with m.gtld-servers.net.>
+    <TCP with multiple names>
+
+DNS Response ns3.arin.net. (ARIN)
     IP 199.5.26.108.53 > 172.31.44.118.45402: 33920*- 2/0/1 AAAA 2001:500:f0::63, RRSIG (235)
     IP 199.5.26.108.53 > 172.31.44.118.40513: 39430*- 2/0/1 A 204.61.216.50, RRSIG (223)
     IP 199.5.26.108.53 > 172.31.44.118.43186: 11835*- 2/0/1 AAAA 2001:500:14:6050:ad::1, RRSIG (235)
-    IP 172.31.44.118.34741 > 69.36.145.33.53: Flags [P.], seq 1:50, ack 1, win 229, options [nop,nop,TS val 698308 ecr 2075681242], length 4915277% [1au] AAAA? a3.verisigndns.com. (47)
-    IP 172.31.44.118.52347 > 69.36.145.33.53: Flags [P.], seq 1:50, ack 1, win 229, options [nop,nop,TS val 698308 ecr 2075685731], length 4954981% [1au] AAAA? a2.verisigndns.com. (47)
+    <TCP with multiple names>
+
+DNS Query to fnord.tastylime.net. (Private)
     IP 172.31.44.118.39697 > 199.233.217.2.53: 21161 [1au] PTR? 205.217.233.199.in-addr.arpa. (57)
-    IP 192.55.83.30.53 > 172.31.44.118.39271: Flags [.], ack 54, win 65535, length 0
-    IP 192.55.83.30.53 > 172.31.44.118.39271: Flags [F.], seq 835, ack 54, win 65535, length 0
-    IP 172.31.44.118.39271 > 192.55.83.30.53: Flags [.], ack 836, win 30858, length 0
+    <TCP with m.gtld-servers.net.>
+
+DNS Response ns3.arin.net. (ARIN)
     IP 199.5.26.108.53 > 172.31.44.118.35701: 28650*- 2/0/1 AAAA 2001:500:13::63, RRSIG (235)
+
+DNS Response b0.org.afilias-nst.org. (Afilias Limited)
     IP 199.19.54.1.53 > 172.31.44.118.47583: 61218- 0/7/6 (486)
+
+DNS Query to ams.sns-pb.isc.org. (Internet Systems Consortium, Inc.)
     IP 172.31.44.118.58459 > 199.6.1.30.53: 6386% [1au] A? sns-pb.isc.org. (43)
+
+DNS Query to i.root-servers.net. (Netnod)
     IP 172.31.44.118.41949 > 192.36.148.17.53: 8684% [1au] A? ns.isc.afilias-nst.info. (52)
     IP 172.31.44.118.32791 > 192.36.148.17.53: 46717% [1au] AAAA? ns.isc.afilias-nst.info. (52)
     IP 172.31.44.118.56901 > 192.36.148.17.53: 2911 [1au] NS? . (28)
+
+DNS Response i.root-servers.net. (Netnod)
     IP 192.36.148.17.53 > 172.31.44.118.41949: 8684- 0/9/13 (814)
     IP 192.36.148.17.53 > 172.31.44.118.32791: 46717- 0/9/13 (814)
+
+DNS Response b0.org.afilias-nst.org. (Afilias Limited)
     IP 199.19.54.1.53 > 172.31.44.118.45452: 52915- 0/7/6 (486)
+
+DNS Response i.root-servers.net. (Netnod)
     IP 192.36.148.17.53 > 172.31.44.118.56901: 2911*- 14/0/27 NS l.root-servers.net., NS c.root-servers.net., NS k.root-servers.net., NS i.root-servers.net., NS a.root-servers.net., NS g.root-servers.net., NS h.root-servers.net., NS b.root-servers.net., NS d.root-servers.net., NS m.root-servers.net., NS e.root-servers.net., NS f.root-servers.net., NS j.root-servers.net., RRSIG (1097)
+
+DNS Query to b0.info.afilias-nst.org. (Afilias Limited)
     IP 172.31.44.118.33701 > 199.254.48.1.53: 19370% [1au] A? ns.isc.afilias-nst.info. (52)
     IP 172.31.44.118.34259 > 199.254.48.1.53: 3322% [1au] AAAA? ns.isc.afilias-nst.info. (52)
+
+DNS Query to ams.sns-pb.isc.org. (Internet Systems Consortium, Inc.)
     IP 172.31.44.118.44806 > 199.6.1.30.53: 33152% [1au] AAAA? sns-pb.isc.org. (43)
-    IP 69.36.145.33.53 > 172.31.44.118.39977: Flags [S.], seq 743728307, ack 1258931388, win 14480, options [mss 1460,sackOK,TS val 2075685741 ecr 698305,nop,wscale 7], length 0
-    IP 172.31.44.118.39977 > 69.36.145.33.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698310 ecr 2075685741], length 0
-    IP 172.31.44.118.39977 > 69.36.145.33.53: Flags [P.], seq 1:50, ack 1, win 229, options [nop,nop,TS val 698310 ecr 2075685741], length 4941405% [1au] AAAA? u3.verisigndns.com. (47)
-    IP 192.55.83.30.53 > 172.31.44.118.54443: Flags [.], ack 49, win 65535, length 0
-    IP 192.55.83.30.53 > 172.31.44.118.54443: Flags [F.], seq 597, ack 49, win 65535, length 0
-    IP 172.31.44.118.54443 > 192.55.83.30.53: Flags [.], ack 598, win 29800, length 0
-    IP 192.55.83.30.53 > 172.31.44.118.39579: Flags [.], ack 54, win 65535, length 0
-    IP 192.55.83.30.53 > 172.31.44.118.39579: Flags [F.], seq 835, ack 54, win 65535, length 0
-    IP 172.31.44.118.39579 > 192.55.83.30.53: Flags [.], ack 836, win 30858, length 0
-    IP 192.55.83.30.53 > 172.31.44.118.58953: Flags [.], ack 49, win 65535, length 0
-    IP 192.55.83.30.53 > 172.31.44.118.58953: Flags [F.], seq 597, ack 49, win 65535, length 0
-    IP 172.31.44.118.58953 > 192.55.83.30.53: Flags [.], ack 598, win 29800, length 0
-    IP 69.36.145.33.53 > 172.31.44.118.37331: Flags [.], ack 54, win 114, options [nop,nop,TS val 2075681261 ecr 698307], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.55081: Flags [.], ack 50, win 114, options [nop,nop,TS val 2075685750 ecr 698307], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.33571: Flags [.], ack 54, win 114, options [nop,nop,TS val 2075685750 ecr 698307], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.55081: Flags [P.], seq 1:763, ack 50, win 114, options [nop,nop,TS val 2075685750 ecr 698307], length 76213177*- 2/7/12 AAAA 2001:500:7967::2:33, RRSIG (760)
-    IP 172.31.44.118.55081 > 69.36.145.33.53: Flags [.], ack 763, win 241, options [nop,nop,TS val 698312 ecr 2075685750], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.37331: Flags [P.], seq 1:626, ack 54, win 114, options [nop,nop,TS val 2075681261 ecr 698307], length 62544755*- 2/8/3 AAAA 2001:67c:e0::9, RRSIG (623)
-    IP 172.31.44.118.37331 > 69.36.145.33.53: Flags [.], ack 626, win 238, options [nop,nop,TS val 698312 ecr 2075681261], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.39963: Flags [S.], seq 1892376169, ack 3014235080, win 14480, options [mss 1460,sackOK,TS val 2075681261 ecr 698307,nop,wscale 7], length 0
-    IP 172.31.44.118.39963 > 69.36.145.33.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698312 ecr 2075681261], length 0
-    IP 172.31.44.118.39963 > 69.36.145.33.53: Flags [P.], seq 1:50, ack 1, win 229, options [nop,nop,TS val 698312 ecr 2075681261], length 4932053% [1au] AAAA? u2.verisigndns.com. (47)
-    IP 69.36.145.33.53 > 172.31.44.118.33571: Flags [P.], seq 1:614, ack 54, win 114, options [nop,nop,TS val 2075685750 ecr 698307], length 61363782*- 2/8/3 A 193.0.9.9, RRSIG (611)
-    IP 172.31.44.118.33571 > 69.36.145.33.53: Flags [.], ack 614, win 238, options [nop,nop,TS val 698312 ecr 2075685750], length 0
-    IP 172.31.44.118.55081 > 69.36.145.33.53: Flags [F.], seq 50, ack 763, win 241, options [nop,nop,TS val 698312 ecr 2075685750], length 0
-    IP 172.31.44.118.37331 > 69.36.145.33.53: Flags [F.], seq 54, ack 626, win 238, options [nop,nop,TS val 698312 ecr 2075681261], length 0
-    IP 172.31.44.118.33571 > 69.36.145.33.53: Flags [F.], seq 54, ack 614, win 238, options [nop,nop,TS val 698312 ecr 2075685750], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.34741: Flags [.], ack 50, win 114, options [nop,nop,TS val 2075681263 ecr 698308], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.34741: Flags [P.], seq 1:763, ack 50, win 114, options [nop,nop,TS val 2075681263 ecr 698308], length 76215277*- 2/7/12 AAAA 2001:502:cbe4::33, RRSIG (760)
-    IP 172.31.44.118.34741 > 69.36.145.33.53: Flags [.], ack 763, win 241, options [nop,nop,TS val 698312 ecr 2075681263], length 0
-    IP 172.31.44.118.34741 > 69.36.145.33.53: Flags [F.], seq 50, ack 763, win 241, options [nop,nop,TS val 698313 ecr 2075681263], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.52347: Flags [.], ack 50, win 114, options [nop,nop,TS val 2075685752 ecr 698308], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.52347: Flags [P.], seq 1:763, ack 50, win 114, options [nop,nop,TS val 2075685752 ecr 698308], length 76254981*- 2/7/12 AAAA 2620:74:19::33, RRSIG (760)
-    IP 172.31.44.118.52347 > 69.36.145.33.53: Flags [.], ack 763, win 241, options [nop,nop,TS val 698313 ecr 2075685752], length 0
-    IP 172.31.44.118.52347 > 69.36.145.33.53: Flags [F.], seq 50, ack 763, win 241, options [nop,nop,TS val 698313 ecr 2075685752], length 0
+    <TCP with multiple names>
+    <TCP with m.gtld-servers.net.>
+    <TCP with multiple names>
+
+DNS Response ns3.arin.net. (ARIN)
     IP 199.5.26.108.53 > 172.31.44.118.34563: 54821*- 2/0/1 AAAA 2001:500:a9::108, RRSIG (237)
-    IP 69.36.145.33.53 > 172.31.44.118.39977: Flags [.], ack 50, win 114, options [nop,nop,TS val 2075685761 ecr 698310], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.39977: Flags [P.], seq 1:763, ack 50, win 114, options [nop,nop,TS val 2075685762 ecr 698310], length 76241405*- 2/7/12 AAAA 2001:502:cbe4::33, RRSIG (760)
-    IP 172.31.44.118.39977 > 69.36.145.33.53: Flags [.], ack 763, win 241, options [nop,nop,TS val 698315 ecr 2075685762], length 0
-    IP 172.31.44.118.39977 > 69.36.145.33.53: Flags [F.], seq 50, ack 763, win 241, options [nop,nop,TS val 698315 ecr 2075685762], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.55081: Flags [F.], seq 763, ack 51, win 114, options [nop,nop,TS val 2075685771 ecr 698312], length 0
-    IP 172.31.44.118.55081 > 69.36.145.33.53: Flags [.], ack 764, win 241, options [nop,nop,TS val 698317 ecr 2075685771], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.33571: Flags [F.], seq 614, ack 55, win 114, options [nop,nop,TS val 2075685771 ecr 698312], length 0
-    IP 172.31.44.118.33571 > 69.36.145.33.53: Flags [.], ack 615, win 238, options [nop,nop,TS val 698317 ecr 2075685771], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.37331: Flags [F.], seq 626, ack 55, win 114, options [nop,nop,TS val 2075681285 ecr 698312], length 0
-    IP 172.31.44.118.37331 > 69.36.145.33.53: Flags [.], ack 627, win 238, options [nop,nop,TS val 698318 ecr 2075681285], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.52347: Flags [F.], seq 763, ack 51, win 114, options [nop,nop,TS val 2075685774 ecr 698313], length 0
-    IP 172.31.44.118.52347 > 69.36.145.33.53: Flags [.], ack 764, win 241, options [nop,nop,TS val 698318 ecr 2075685774], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.34741: Flags [F.], seq 763, ack 51, win 114, options [nop,nop,TS val 2075681285 ecr 698313], length 0
-    IP 172.31.44.118.34741 > 69.36.145.33.53: Flags [.], ack 764, win 241, options [nop,nop,TS val 698318 ecr 2075681285], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.39963: Flags [.], ack 50, win 114, options [nop,nop,TS val 2075681285 ecr 698312], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.39963: Flags [P.], seq 1:763, ack 50, win 114, options [nop,nop,TS val 2075681293 ecr 698312], length 76232053*- 2/7/12 AAAA 2620:74:19::33, RRSIG (760)
-    IP 172.31.44.118.39963 > 69.36.145.33.53: Flags [.], ack 763, win 241, options [nop,nop,TS val 698320 ecr 2075681293], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.39977: Flags [F.], seq 763, ack 51, win 114, options [nop,nop,TS val 2075685782 ecr 698315], length 0
-    IP 172.31.44.118.39977 > 69.36.145.33.53: Flags [.], ack 764, win 241, options [nop,nop,TS val 698320 ecr 2075685782], length 0
-    IP 172.31.44.118.39963 > 69.36.145.33.53: Flags [F.], seq 50, ack 763, win 241, options [nop,nop,TS val 698320 ecr 2075681293], length 0
+    <TCP with multiple names>
+
+DNS Response e.gtld-servers.net. (Verisign)
     IP 192.12.94.30.53 > 172.31.44.118.44042: 48094-| 0/7/4 (512)
-    IP 172.31.44.118.41099 > 192.12.94.30.53: Flags [S], seq 1481659109, win 29200, options [mss 1460,sackOK,TS val 698324 ecr 0,nop,wscale 7], length 0
+    <TCP with e.gtld-servers.net.>
     IP 192.12.94.30.53 > 172.31.44.118.38874: 42706-| 0/7/4 (512)
-    IP 172.31.44.118.50295 > 192.12.94.30.53: Flags [S], seq 4398634, win 29200, options [mss 1460,sackOK,TS val 698324 ecr 0,nop,wscale 7], length 0
+    <TCP with e.gtld-servers.net.>
     IP 192.12.94.30.53 > 172.31.44.118.40520: 11287-| 0/7/4 (512)
     IP 192.12.94.30.53 > 172.31.44.118.46555: 8461-| 0/7/4 (512)
-    IP 172.31.44.118.57035 > 192.12.94.30.53: Flags [S], seq 797856536, win 29200, options [mss 1460,sackOK,TS val 698324 ecr 0,nop,wscale 7], length 0
-    IP 172.31.44.118.44369 > 192.12.94.30.53: Flags [S], seq 3571752725, win 29200, options [mss 1460,sackOK,TS val 698324 ecr 0,nop,wscale 7], length 0
+    <TCP with e.gtld-servers.net.>
     IP 192.12.94.30.53 > 172.31.44.118.34868: 9843-| 0/7/4 (512)
-    IP 172.31.44.118.34527 > 192.12.94.30.53: Flags [S], seq 2869567364, win 29200, options [mss 1460,sackOK,TS val 698324 ecr 0,nop,wscale 7], length 0
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [F.], seq 31, ack 1100, win 246, length 0
+    <TCP with e.gtld-servers.net.>
+    <TCP with h.root-servers.net.>
     IP 192.12.94.30.53 > 172.31.44.118.33579: 56734-| 0/7/4 (512)
-    IP 172.31.44.118.46951 > 192.12.94.30.53: Flags [S], seq 3170703117, win 29200, options [mss 1460,sackOK,TS val 698325 ecr 0,nop,wscale 7], length 0
+    <TCP with e.gtld-servers.net.>
     IP 192.12.94.30.53 > 172.31.44.118.40807: 59679-| 0/7/4 (512)
-    IP 172.31.44.118.39109 > 192.12.94.30.53: Flags [S], seq 508213611, win 29200, options [mss 1460,sackOK,TS val 698325 ecr 0,nop,wscale 7], length 0
+    <TCP with e.gtld-servers.net.>
     IP 192.12.94.30.53 > 172.31.44.118.57580: 24781-| 0/7/4 (512)
-    IP 172.31.44.118.48263 > 192.12.94.30.53: Flags [S], seq 841548051, win 29200, options [mss 1460,sackOK,TS val 698325 ecr 0,nop,wscale 7], length 0
+    <TCP with e.gtld-servers.net.>
+
+DNS Response b0.info.afilias-nst.org. (Afilias Limited)
     IP 199.254.48.1.53 > 172.31.44.118.33701: 19370-| 0/6/1 (372)
-    IP 172.31.44.118.40663 > 199.254.48.1.53: Flags [S], seq 2690431673, win 29200, options [mss 1460,sackOK,TS val 698326 ecr 0,nop,wscale 7], length 0
-    IP 69.36.145.33.53 > 172.31.44.118.39963: Flags [F.], seq 763, ack 51, win 114, options [nop,nop,TS val 2075681316 ecr 698320], length 0
-    IP 172.31.44.118.39963 > 69.36.145.33.53: Flags [.], ack 764, win 241, options [nop,nop,TS val 698326 ecr 2075681316], length 0
+    <TCP with b0.info.afilias-nst.org.>
+    <TCP with multiple names>
     IP 199.254.48.1.53 > 172.31.44.118.34259: 3322-| 0/0/1 (52)
-    IP 172.31.44.118.49443 > 199.254.48.1.53: Flags [S], seq 2974553490, win 29200, options [mss 1460,sackOK,TS val 698328 ecr 0,nop,wscale 7], length 0
+    <TCP with b0.info.afilias-nst.org.>
+
+DNS Response ams.sns-pb.isc.org. (Internet Systems Consortium, Inc.)
     IP 199.6.1.30.53 > 172.31.44.118.58459: 6386*- 2/0/1 A 192.5.4.1, RRSIG (226)
     IP 199.6.1.30.53 > 172.31.44.118.44806: 33152*- 2/0/1 AAAA 2001:500:2e::1, RRSIG (238)
+
+DNS Response fnord.tastylime.net. (Private)
     IP 199.233.217.2.53 > 172.31.44.118.38376: 61443*- 1/0/1 A 199.233.217.2 (61)
     IP 199.233.217.2.53 > 172.31.44.118.56602: 33212*- 0/1/1 (108)
     IP 199.233.217.2.53 > 172.31.44.118.39697: 21161*- 1/2/1 CNAME 205.192-27.217.233.199.in-addr.arpa. (135)
+
+
+DNS Query to and Response i.root-servers.net. (Netnod)
     IP 172.31.44.118.50228 > 192.36.148.17.53: 491 [1au] DS? arpa. (33)
     IP 192.36.148.17.53 > 172.31.44.118.50228: 491*- 3/0/1 DS, DS, RRSIG (404)
     IP 172.31.44.118.54694 > 192.36.148.17.53: 14218 [1au] DS? in-addr.arpa. (41)
     IP 192.36.148.17.53 > 172.31.44.118.54694: 14218*- 4/0/1 DS, DS, DS, RRSIG (349)
     IP 172.31.44.118.43058 > 192.36.148.17.53: 53218 [1au] DNSKEY? arpa. (33)
     IP 192.36.148.17.53 > 172.31.44.118.43058: 53218*- 3/0/1 DNSKEY, DNSKEY, RRSIG (749)
+
+DNS Query to anysec.apnic.net. (APNIC)
     IP 172.31.44.118.35914 > 203.119.86.101.53: 57312 [1au] DS? 199.in-addr.arpa. (45)
     IP 172.31.44.118.57243 > 203.119.86.101.53: 13025% [1au] AAAA? a.in-addr-servers.arpa. (51)
     IP 172.31.44.118.48765 > 203.119.86.101.53: 59255% [1au] AAAA? b.in-addr-servers.arpa. (51)
-    IP 199.254.48.1.53 > 172.31.44.118.40663: Flags [S.], seq 3035727485, ack 2690431674, win 28960, options [mss 1460,sackOK,TS val 1604923294 ecr 698326,nop,wscale 7], length 0
-    IP 172.31.44.118.40663 > 199.254.48.1.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698342 ecr 1604923294], length 0
-    IP 172.31.44.118.40663 > 199.254.48.1.53: Flags [P.], seq 1:55, ack 1, win 229, options [nop,nop,TS val 698342 ecr 1604923294], length 5459888% [1au] A? ns.isc.afilias-nst.info. (52)
-    IP 192.12.94.30.53 > 172.31.44.118.41099: Flags [S.], seq 589665601, ack 1481659110, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.41099 > 192.12.94.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.41099 > 192.12.94.30.53: Flags [P.], seq 1:61, ack 1, win 29200, length 6018956% [1au] A? ns-cloud-c3.googledomains.com. (58)
-    IP 192.12.94.30.53 > 172.31.44.118.57035: Flags [S.], seq 1387931555, ack 797856537, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.57035 > 192.12.94.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.57035 > 192.12.94.30.53: Flags [P.], seq 1:61, ack 1, win 29200, length 6060867% [1au] AAAA? ns-cloud-c4.googledomains.com. (58)
-    IP 192.12.94.30.53 > 172.31.44.118.50295: Flags [S.], seq 155527347, ack 4398635, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.50295 > 192.12.94.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.50295 > 192.12.94.30.53: Flags [P.], seq 1:61, ack 1, win 29200, length 604579% [1au] A? ns-cloud-c4.googledomains.com. (58)
-    IP 192.12.94.30.53 > 172.31.44.118.44369: Flags [S.], seq 1918694118, ack 3571752726, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.44369 > 192.12.94.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.46951: Flags [S.], seq 4251507899, ack 3170703118, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.46951 > 192.12.94.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.44369 > 192.12.94.30.53: Flags [P.], seq 1:61, ack 1, win 29200, length 6031887% [1au] AAAA? ns-cloud-c3.googledomains.com. (58)
-    IP 172.31.44.118.46951 > 192.12.94.30.53: Flags [P.], seq 1:61, ack 1, win 29200, length 606760% [1au] A? ns-cloud-c1.googledomains.com. (58)
-    IP 192.12.94.30.53 > 172.31.44.118.34527: Flags [S.], seq 604744279, ack 2869567365, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.34527 > 192.12.94.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.34527 > 192.12.94.30.53: Flags [P.], seq 1:61, ack 1, win 29200, length 6020881% [1au] AAAA? ns-cloud-c1.googledomains.com. (58)
-    IP 192.12.94.30.53 > 172.31.44.118.48263: Flags [S.], seq 1022327750, ack 841548052, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.48263 > 192.12.94.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.39109: Flags [S.], seq 2289195141, ack 508213612, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.39109 > 192.12.94.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.48263 > 192.12.94.30.53: Flags [P.], seq 1:61, ack 1, win 29200, length 6044726% [1au] A? ns-cloud-c2.googledomains.com. (58)
-    IP 172.31.44.118.39109 > 192.12.94.30.53: Flags [P.], seq 1:61, ack 1, win 29200, length 6036681% [1au] AAAA? ns-cloud-c2.googledomains.com. (58)
-    IP 199.254.48.1.53 > 172.31.44.118.49443: Flags [S.], seq 3848106350, ack 2974553491, win 65535, options [mss 1460,nop,wscale 6,sackOK,TS val 4280980047 ecr 698328], length 0
-    IP 172.31.44.118.49443 > 199.254.48.1.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698344 ecr 4280980047], length 0
-    IP 172.31.44.118.49443 > 199.254.48.1.53: Flags [P.], seq 1:55, ack 1, win 229, options [nop,nop,TS val 698344 ecr 4280980047], length 5446167% [1au] AAAA? ns.isc.afilias-nst.info. (52)
+    <TCP with b0.info.afilias-nst.org.>
+    <TCP with e.gtld-servers.net.>
+    <TCP with b0.info.afilias-nst.org.>
+
+DNS Response cumin.apnic.net. (APNIC)
     IP 202.12.29.59.53 > 172.31.44.118.57419: 9832*- 2/0/1 A 202.12.31.53, RRSIG (227)
-    IP 199.254.48.1.53 > 172.31.44.118.40663: Flags [.], ack 55, win 227, options [nop,nop,TS val 1604923310 ecr 698342], length 0
-    IP 199.254.48.1.53 > 172.31.44.118.40663: Flags [P.], seq 1:798, ack 55, win 227, options [nop,nop,TS val 1604923310 ecr 698342], length 79759888- 0/8/9 (795)
-    IP 172.31.44.118.40663 > 199.254.48.1.53: Flags [.], ack 798, win 241, options [nop,nop,TS val 698358 ecr 1604923310], length 0
+    <TCP with b0.info.afilias-nst.org.>
+
+DNS Query to and Response c0.dig.afilias-nst.info. (Afilias)
     IP 172.31.44.118.50860 > 65.22.8.1.53: 31302% [1au] A? ns.isc.afilias-nst.info. (52)
-    IP 172.31.44.118.40663 > 199.254.48.1.53: Flags [F.], seq 55, ack 798, win 241, options [nop,nop,TS val 698358 ecr 1604923310], length 0
+    <TCP with b0.info.afilias-nst.org.>
     IP 65.22.8.1.53 > 172.31.44.118.50860: 31302*- 1/0/1 A 199.254.63.254 (68)
+
+DNS Response cumin.apnic.net. (APNIC)
     IP 202.12.29.59.53 > 172.31.44.118.58290: 59448*- 2/0/1 A 203.119.95.53, RRSIG (227)
     IP 202.12.29.59.53 > 172.31.44.118.46237: 10310*- 2/0/1 AAAA 2001:dc0:2001:0:4608::25, RRSIG (239)
     IP 202.12.29.59.53 > 172.31.44.118.38428: 21967*- 2/0/1 A 202.12.29.25, RRSIG (227)
@@ -471,228 +653,163 @@ Reverse DNS lookup for 199.233.217.205
     IP 202.12.29.59.53 > 172.31.44.118.38913: 798*- 2/0/1 A 194.146.106.106, RRSIG (230)
     IP 202.12.29.59.53 > 172.31.44.118.34557: 8414*- 2/0/1 AAAA 2001:dc0:1:0:4777::131, RRSIG (239)
     IP 202.12.29.59.53 > 172.31.44.118.37267: 40131*- 2/0/1 A 202.12.28.140, RRSIG (228)
-    IP 192.12.94.30.53 > 172.31.44.118.41099: Flags [P.], seq 1:794, ack 61, win 65535, length 79318956- 0/8/9 (791)
-    IP 172.31.44.118.41099 > 192.12.94.30.53: Flags [.], ack 794, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.57035: Flags [P.], seq 1:794, ack 61, win 65535, length 79360867- 0/8/9 (791)
-    IP 172.31.44.118.57035 > 192.12.94.30.53: Flags [.], ack 794, win 30134, length 0
+    <TCP with e.gtld-servers.net.>
+
+DNS Query to and Response ns1.google.com. (Google LLC)
     IP 172.31.44.118.59486 > 216.239.32.10.53: 40019% [1au] A? ns-cloud-c3.googledomains.com. (58)
     IP 172.31.44.118.48481 > 216.239.32.10.53: 45186% [1au] AAAA? ns-cloud-c4.googledomains.com. (58)
-    IP 172.31.44.118.41099 > 192.12.94.30.53: Flags [F.], seq 61, ack 794, win 30134, length 0
-    IP 172.31.44.118.57035 > 192.12.94.30.53: Flags [F.], seq 61, ack 794, win 30134, length 0
-    IP 199.254.48.1.53 > 172.31.44.118.49443: Flags [P.], seq 1:798, ack 55, win 1040, options [nop,nop,TS val 4280980114 ecr 698344], length 79746167- 0/8/9 (795)
-    IP 172.31.44.118.49443 > 199.254.48.1.53: Flags [.], ack 798, win 241, options [nop,nop,TS val 698361 ecr 4280980114], length 0
-    IP 192.12.94.30.53 > 172.31.44.118.46951: Flags [P.], seq 1:794, ack 61, win 65535, length 7936760- 0/8/9 (791)
-    IP 172.31.44.118.46951 > 192.12.94.30.53: Flags [.], ack 794, win 30134, length 0
-    IP 172.31.44.118.49443 > 199.254.48.1.53: Flags [F.], seq 55, ack 798, win 241, options [nop,nop,TS val 698361 ecr 4280980114], length 0
-    IP 172.31.44.118.46951 > 192.12.94.30.53: Flags [F.], seq 61, ack 794, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.44369: Flags [P.], seq 1:794, ack 61, win 65535, length 79331887- 0/8/9 (791)
-    IP 172.31.44.118.44369 > 192.12.94.30.53: Flags [.], ack 794, win 30134, length 0
-    IP 172.31.44.118.44369 > 192.12.94.30.53: Flags [F.], seq 61, ack 794, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.50295: Flags [P.], seq 1:794, ack 61, win 65535, length 7934579- 0/8/9 (791)
-    IP 172.31.44.118.50295 > 192.12.94.30.53: Flags [.], ack 794, win 30134, length 0
-    IP 172.31.44.118.50295 > 192.12.94.30.53: Flags [F.], seq 61, ack 794, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.34527: Flags [P.], seq 1:794, ack 61, win 65535, length 79320881- 0/8/9 (791)
-    IP 172.31.44.118.34527 > 192.12.94.30.53: Flags [.], ack 794, win 30134, length 0
-    IP 172.31.44.118.34527 > 192.12.94.30.53: Flags [F.], seq 61, ack 794, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.48263: Flags [P.], seq 1:794, ack 61, win 65535, length 79344726- 0/8/9 (791)
-    IP 172.31.44.118.48263 > 192.12.94.30.53: Flags [.], ack 794, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.39109: Flags [P.], seq 1:794, ack 61, win 65535, length 79336681- 0/8/9 (791)
-    IP 172.31.44.118.39109 > 192.12.94.30.53: Flags [.], ack 794, win 30134, length 0
-    IP 172.31.44.118.48263 > 192.12.94.30.53: Flags [F.], seq 61, ack 794, win 30134, length 0
-    IP 172.31.44.118.39109 > 192.12.94.30.53: Flags [F.], seq 61, ack 794, win 30134, length 0
+    <TCP with e.gtld-servers.net.>
+    <TCP with b0.info.afilias-nst.org.>
+    <TCP with e.gtld-servers.net.>
+    <TCP with b0.info.afilias-nst.org.>
+    <TCP with e.gtld-servers.net.>
     IP 216.239.32.10.53 > 172.31.44.118.59486: 40019*- 1/0/0 A 216.239.36.108 (63)
     IP 216.239.32.10.53 > 172.31.44.118.48481: 45186*- 1/0/0 AAAA 2001:4860:4802:38::6c (75)
-    IP 199.254.48.1.53 > 172.31.44.118.40663: Flags [F.], seq 798, ack 56, win 227, options [nop,nop,TS val 1604923326 ecr 698358], length 0
-    IP 172.31.44.118.40663 > 199.254.48.1.53: Flags [.], ack 799, win 241, options [nop,nop,TS val 698374 ecr 1604923326], length 0
+    <TCP with b0.info.afilias-nst.org.>
+
+DNS Response anysec.apnic.net. (APNIC)
     IP 203.119.86.101.53 > 172.31.44.118.35914: 57312*- 2/0/1 DS, RRSIG (253)
+
+DNS Query to and Response b.in-addr-servers.arpa. (Internet Architecture Board (IAB))
     IP 172.31.44.118.48456 > 199.253.183.183.53: 49775 [1au] DNSKEY? in-addr.arpa. (41)
     IP 199.253.183.183.53 > 172.31.44.118.48456: 49775*-| 0/0/1 (41)
     IP 172.31.44.118.41455 > 199.253.183.183.53: Flags [S], seq 3321968414, win 29200, options [mss 1460,sackOK,TS val 698376 ecr 0,nop,wscale 7], length 0
+
+DNS Response anysec.apnic.net. (APNIC)
     IP 203.119.86.101.53 > 172.31.44.118.57243: 13025*- 2/0/1 AAAA 2620:37:e000::53, RRSIG (259)
-    IP 199.253.183.183.53 > 172.31.44.118.41455: Flags [S.], seq 3201998994, ack 3321968415, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 9], length 0
-    IP 172.31.44.118.41455 > 199.253.183.183.53: Flags [.], ack 1, win 229, length 0
-    IP 172.31.44.118.41455 > 199.253.183.183.53: Flags [P.], seq 1:44, ack 1, win 229, length 4354192 [1au] DNSKEY? in-addr.arpa. (41)
-    IP 199.253.183.183.53 > 172.31.44.118.41455: Flags [.], ack 44, win 58, length 0
-    IP 199.253.183.183.53 > 172.31.44.118.41455: Flags [P.], seq 1:1344, ack 44, win 58, length 134354192*- 5/0/1 DNSKEY, DNSKEY, DNSKEY, RRSIG, RRSIG (1341)
-    IP 172.31.44.118.41455 > 199.253.183.183.53: Flags [.], ack 1344, win 250, length 0
-    IP 172.31.44.118.41455 > 199.253.183.183.53: Flags [F.], seq 44, ack 1344, win 250, length 0
-    IP 172.31.44.118.38405 > 199.180.180.63.53: 38782 [1au] DS? 233.199.in-addr.arpa. (49)
-    IP 199.253.183.183.53 > 172.31.44.118.41455: Flags [F.], seq 1344, ack 45, win 58, length 0
-    IP 172.31.44.118.41455 > 199.253.183.183.53: Flags [.], ack 1345, win 250, length 0
-    IP 199.254.48.1.53 > 172.31.44.118.49443: Flags [.], ack 56, win 1040, options [nop,nop,TS val 4280980182 ecr 698361], length 0
-    IP 199.254.48.1.53 > 172.31.44.118.49443: Flags [F.], seq 798, ack 56, win 1040, options [nop,nop,TS val 4280980182 ecr 698361], length 0
-    IP 172.31.44.118.49443 > 199.254.48.1.53: Flags [.], ack 799, win 241, options [nop,nop,TS val 698378 ecr 4280980182], length 0
-    IP 192.12.94.30.53 > 172.31.44.118.46951: Flags [.], ack 61, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.41099: Flags [.], ack 62, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.57035: Flags [.], ack 62, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.41099: Flags [F.], seq 794, ack 62, win 65535, length 0
-    IP 172.31.44.118.41099 > 192.12.94.30.53: Flags [.], ack 795, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.57035: Flags [F.], seq 794, ack 62, win 65535, length 0
-    IP 172.31.44.118.57035 > 192.12.94.30.53: Flags [.], ack 795, win 30134, length 0
-    IP 203.119.86.101.53 > 172.31.44.118.48765: 59255*- 2/0/1 AAAA 2001:500:87::87, RRSIG (259)
-    IP 192.12.94.30.53 > 172.31.44.118.46951: Flags [.], ack 62, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.46951: Flags [F.], seq 794, ack 62, win 65535, length 0
-    IP 172.31.44.118.46951 > 192.12.94.30.53: Flags [.], ack 795, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.44369: Flags [.], ack 61, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.44369: Flags [.], ack 62, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.44369: Flags [F.], seq 794, ack 62, win 65535, length 0
-    IP 172.31.44.118.44369 > 192.12.94.30.53: Flags [.], ack 795, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.50295: Flags [.], ack 62, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.50295: Flags [F.], seq 794, ack 62, win 65535, length 0
-    IP 172.31.44.118.50295 > 192.12.94.30.53: Flags [.], ack 795, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.34527: Flags [.], ack 62, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.34527: Flags [F.], seq 794, ack 62, win 65535, length 0
-    IP 172.31.44.118.34527 > 192.12.94.30.53: Flags [.], ack 795, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.48263: Flags [.], ack 62, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.48263: Flags [F.], seq 794, ack 62, win 65535, length 0
-    IP 172.31.44.118.48263 > 192.12.94.30.53: Flags [.], ack 795, win 30134, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.39109: Flags [.], ack 62, win 65535, length 0
-    IP 192.12.94.30.53 > 172.31.44.118.39109: Flags [F.], seq 794, ack 62, win 65535, length 0
-    IP 172.31.44.118.39109 > 192.12.94.30.53: Flags [.], ack 795, win 30134, length 0
-    IP 199.180.180.63.53 > 172.31.44.118.38405: 38782*- 0/4/1 (505)
+    <TCP with b.in-addr-servers.arpa.>
+    <TCP with b0.info.afilias-nst.org.>
+    <TCP with e.gtld-servers.net.>
+
+DNS Query to and Response arin.authdns.ripe.net. (RIPE)
     IP 172.31.44.118.42584 > 193.0.9.10.53: 5788 [1au] DNSKEY? 199.in-addr.arpa. (45)
     IP 193.0.9.10.53 > 172.31.44.118.42584: 5788*-| 0/0/1 (45)
-    IP 172.31.44.118.39511 > 193.0.9.10.53: Flags [S], seq 3084794678, win 29200, options [mss 1460,sackOK,TS val 698414 ecr 0,nop,wscale 7], length 0
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [F.], seq 31, ack 1100, win 246, length 0
-    IP 193.0.9.10.53 > 172.31.44.118.39511: Flags [S.], seq 2733647125, ack 3084794679, win 28960, options [mss 1460,sackOK,TS val 2442105929 ecr 698414,nop,wscale 7], length 0
-    IP 172.31.44.118.39511 > 193.0.9.10.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698433 ecr 2442105929], length 0
-    IP 172.31.44.118.39511 > 193.0.9.10.53: Flags [P.], seq 1:48, ack 1, win 229, options [nop,nop,TS val 698433 ecr 2442105929], length 4737091 [1au] DNSKEY? 199.in-addr.arpa. (45)
-    IP 193.0.9.10.53 > 172.31.44.118.39511: Flags [.], ack 48, win 227, options [nop,nop,TS val 2442106005 ecr 698433], length 0
-    IP 193.0.9.10.53 > 172.31.44.118.39511: Flags [P.], seq 1:1104, ack 48, win 227, options [nop,nop,TS val 2442106005 ecr 698433], length 110337091*- 5/0/1 DNSKEY, DNSKEY, DNSKEY, RRSIG, RRSIG (1101)
-    IP 172.31.44.118.39511 > 193.0.9.10.53: Flags [.], ack 1104, win 246, options [nop,nop,TS val 698452 ecr 2442106005], length 0
-    IP 172.31.44.118.39511 > 193.0.9.10.53: Flags [F.], seq 48, ack 1104, win 246, options [nop,nop,TS val 698452 ecr 2442106005], length 0
+    <TCP with arin.authdns.ripe.net.>
+    <TCP with h.root-servers.net.>
+    <TCP with arin.authdns.ripe.net.>
+
+DNS Query to and Response x.arin.net. (ARIN)
     IP 172.31.44.118.59998 > 199.71.0.63.53: 25944 [1au] DS? 217.233.199.in-addr.arpa. (53)
     IP 199.71.0.63.53 > 172.31.44.118.59998: 25944*- 0/4/1 (505)
-    IP 193.0.9.10.53 > 172.31.44.118.39511: Flags [F.], seq 1104, ack 49, win 227, options [nop,nop,TS val 2442106081 ecr 698452], length 0
-    IP 172.31.44.118.39511 > 193.0.9.10.53: Flags [.], ack 1105, win 246, options [nop,nop,TS val 698471 ecr 2442106081], length 0
+    <TCP with arin.authdns.ripe.net.>
+
+DNS Query to fnord.tastylime.net. (Private)
     IP 172.31.44.118.42888 > 199.233.217.2.53: 56640 [1au] PTR? 205.192-27.217.233.199.in-addr.arpa. (64)
     IP 199.233.217.2.53 > 172.31.44.118.42888: 56640- 0/2/1 (117)
+
+DNS Query to i.root-servers.net. (Netnod)
     IP 172.31.44.118.46882 > 192.36.148.17.53: 10354% [1au] A? ns.netbsd.de. (41)
     IP 172.31.44.118.53846 > 192.36.148.17.53: 434% [1au] AAAA? ns.netbsd.de. (41)
+
+DNS Query to d0.org.afilias-nst.org. (Afilias Limited)
     IP 172.31.44.118.34704 > 199.19.57.1.53: 51567% [1au] A? ns.netbsd.org. (42)
+
+DNS Response i.root-servers.net. (Netnod)
     IP 192.36.148.17.53 > 172.31.44.118.53846: 434- 0/8/12 (718)
     IP 192.36.148.17.53 > 172.31.44.118.46882: 10354- 0/8/12 (718)
+
+DNS Query to and Response d0.org.afilias-nst.org. (Afilias Limited)
     IP 172.31.44.118.59754 > 199.19.57.1.53: 17756% [1au] AAAA? ns.netbsd.org. (42)
     IP 199.19.57.1.53 > 172.31.44.118.34704: 51567- 0/4/3 (337)
     IP 199.19.57.1.53 > 172.31.44.118.59754: 17756- 0/4/3 (337)
+
+DNS Query to mail.netbsd.org. (The NetBSD Foundation, Inc.)
     IP 172.31.44.118.56198 > 199.233.217.200.53: 21403% [1au] A? ns.netbsd.org. (42)
     IP 172.31.44.118.39163 > 199.233.217.200.53: 28581% [1au] AAAA? ns.netbsd.org. (42)
+
+DNS Query to i.root-servers.net. (Netnod)
     IP 172.31.44.118.40421 > 192.36.148.17.53: 44313% [1au] AAAA? z.nic.de. (37)
+
+DNS Query to a.nic.de. (DENIC)
     IP 172.31.44.118.41315 > 194.0.0.53.53: 49275% [1au] AAAA? ns.netbsd.de. (41)
+
+DNS Response i.root-servers.net. (Netnod)
     IP 192.36.148.17.53 > 172.31.44.118.40421: 44313- 0/8/12 (708)
+
+DNS Query to a.nic.de. (DENIC)
     IP 172.31.44.118.54910 > 194.0.0.53.53: 40178% [1au] A? ns.netbsd.de. (41)
     IP 172.31.44.118.36928 > 194.0.0.53.53: 50308% [1au] AAAA? z.nic.de. (37)
+
+DNS Response mail.netbsd.org. (The NetBSD Foundation, Inc.)
     IP 199.233.217.200.53 > 172.31.44.118.56198: 21403*- 2/0/1 A 199.233.217.200, RRSIG (228)
     IP 172.31.44.118.33742 > 199.233.217.200.53: 29372 [1au] PTR? 205.192-27.217.233.199.in-addr.arpa. (64)
     IP 199.233.217.200.53 > 172.31.44.118.39163: 28581*- 2/0/1 AAAA 2001:470:a085:999::53, RRSIG (240)
+
+DNS Response a.nic.de. (DENIC)
     IP 194.0.0.53.53 > 172.31.44.118.54910: 40178- 0/5/1 (318)
+
+DNS Query to f.gtld-servers.net. (Verisign)
     IP 172.31.44.118.40387 > 192.35.51.30.53: 57430% [1au] A? micky.ibh.net. (42)
     IP 172.31.44.118.57314 > 192.35.51.30.53: 27555% [1au] AAAA? micky.ibh.net. (42)
     IP 172.31.44.118.60517 > 192.35.51.30.53: 56031% [1au] A? adolar.ibh.net. (43)
     IP 172.31.44.118.55882 > 192.35.51.30.53: 24385% [1au] AAAA? adolar.ibh.net. (43)
     IP 172.31.44.118.39811 > 192.35.51.30.53: 39701% [1au] A? duck.ibh.net. (41)
     IP 172.31.44.118.60882 > 192.35.51.30.53: 21625% [1au] AAAA? duck.ibh.net. (41)
+
+DNS Response a.nic.de. (DENIC)
     IP 194.0.0.53.53 > 172.31.44.118.36928: 50308-| 0/0/1 (37)
-    IP 172.31.44.118.48397 > 194.0.0.53.53: Flags [S], seq 474783602, win 29200, options [mss 1460,sackOK,TS val 698533 ecr 0,nop,wscale 7], length 0
+    <TCP to a.nic.de.>
     IP 194.0.0.53.53 > 172.31.44.118.41315: 49275- 0/5/1 (318)
+
+DNS Response f.gtld-servers.net. (Verisign)
     IP 192.35.51.30.53 > 172.31.44.118.40387: 57430-| 0/6/5 (506)
-    IP 172.31.44.118.35409 > 192.35.51.30.53: Flags [S], seq 902555866, win 29200, options [mss 1460,sackOK,TS val 698549 ecr 0,nop,wscale 7], length 0
+    <TCP to f.gtld-servers.net.>
     IP 192.35.51.30.53 > 172.31.44.118.55882: 24385-| 0/6/5 (506)
-    IP 172.31.44.118.38093 > 192.35.51.30.53: Flags [S], seq 1653213411, win 29200, options [mss 1460,sackOK,TS val 698549 ecr 0,nop,wscale 7], length 0
+    <TCP to f.gtld-servers.net.>
     IP 192.35.51.30.53 > 172.31.44.118.60517: 56031-| 0/6/5 (506)
-    IP 172.31.44.118.39085 > 192.35.51.30.53: Flags [S], seq 1245405249, win 29200, options [mss 1460,sackOK,TS val 698549 ecr 0,nop,wscale 7], length 0
+    <TCP to f.gtld-servers.net.>
     IP 192.35.51.30.53 > 172.31.44.118.57314: 27555-| 0/6/5 (506)
-    IP 172.31.44.118.43965 > 192.35.51.30.53: Flags [S], seq 819114123, win 29200, options [mss 1460,sackOK,TS val 698550 ecr 0,nop,wscale 7], length 0
+    <TCP to f.gtld-servers.net.>
     IP 192.35.51.30.53 > 172.31.44.118.60882: 21625-| 0/6/5 (506)
     IP 192.35.51.30.53 > 172.31.44.118.39811: 39701-| 0/6/5 (506)
-    IP 172.31.44.118.43753 > 192.35.51.30.53: Flags [S], seq 8639842, win 29200, options [mss 1460,sackOK,TS val 698550 ecr 0,nop,wscale 7], length 0
-    IP 172.31.44.118.44237 > 192.35.51.30.53: Flags [S], seq 3068124104, win 29200, options [mss 1460,sackOK,TS val 698550 ecr 0,nop,wscale 7], length 0
+    <TCP to f.gtld-servers.net.>
+
+DNS Response mail.netbsd.org. (The NetBSD Foundation, Inc.)
     IP 199.233.217.200.53 > 172.31.44.118.33742: 29372*- 1/2/5 PTR mollari.netbsd.org. (523)
-    IP 194.0.0.53.53 > 172.31.44.118.48397: Flags [S.], seq 169766988, ack 474783603, win 14480, options [mss 1460,sackOK,TS val 2206616471 ecr 698533,nop,wscale 8], length 0
-    IP 172.31.44.118.48397 > 194.0.0.53.53: Flags [.], ack 1, win 229, options [nop,nop,TS val 698561 ecr 2206616471], length 0
-    IP 172.31.44.118.48397 > 194.0.0.53.53: Flags [P.], seq 1:40, ack 1, win 229, options [nop,nop,TS val 698561 ecr 2206616471], length 3922360% [1au] AAAA? z.nic.de. (37)
-    IP 192.35.51.30.53 > 172.31.44.118.35409: Flags [S.], seq 2058922981, ack 902555867, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.35409 > 192.35.51.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.35409 > 192.35.51.30.53: Flags [P.], seq 1:45, ack 1, win 29200, length 4422721% [1au] A? micky.ibh.net. (42)
-    IP 192.35.51.30.53 > 172.31.44.118.39085: Flags [S.], seq 204550792, ack 1245405250, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.39085 > 192.35.51.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.38093: Flags [S.], seq 1799468808, ack 1653213412, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.38093 > 192.35.51.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.39085 > 192.35.51.30.53: Flags [P.], seq 1:46, ack 1, win 29200, length 4543348% [1au] A? adolar.ibh.net. (43)
-    IP 172.31.44.118.38093 > 192.35.51.30.53: Flags [P.], seq 1:46, ack 1, win 29200, length 453191% [1au] AAAA? adolar.ibh.net. (43)
-    IP 192.35.51.30.53 > 172.31.44.118.43753: Flags [S.], seq 4244741807, ack 8639843, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.43753 > 192.35.51.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.43753 > 192.35.51.30.53: Flags [P.], seq 1:44, ack 1, win 29200, length 4327471% [1au] AAAA? duck.ibh.net. (41)
-    IP 192.35.51.30.53 > 172.31.44.118.43965: Flags [S.], seq 1689502946, ack 819114124, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.43965 > 192.35.51.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.43965 > 192.35.51.30.53: Flags [P.], seq 1:45, ack 1, win 29200, length 442360% [1au] AAAA? micky.ibh.net. (42)
-    IP 192.35.51.30.53 > 172.31.44.118.44237: Flags [S.], seq 4281512861, ack 3068124105, win 1460, options [mss 1460], length 0
-    IP 172.31.44.118.44237 > 192.35.51.30.53: Flags [.], ack 1, win 29200, length 0
-    IP 172.31.44.118.44237 > 192.35.51.30.53: Flags [P.], seq 1:44, ack 1, win 29200, length 4337364% [1au] A? duck.ibh.net. (41)
-    IP 192.35.51.30.53 > 172.31.44.118.39085: Flags [P.], seq 1:688, ack 46, win 65535, length 68743348- 0/7/6 (685)
-    IP 172.31.44.118.39085 > 192.35.51.30.53: Flags [.], ack 688, win 30228, length 0
+    <TCP to a.nic.de.>
+    <TCP to f.gtld-servers.net.>
+
+DNS Query to duck.ibh.net. (IBH IT-Service)
     IP 172.31.44.118.37386 > 212.111.225.17.53: 8535% [1au] A? adolar.ibh.net. (43)
-    IP 172.31.44.118.39085 > 192.35.51.30.53: Flags [F.], seq 46, ack 688, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.35409: Flags [P.], seq 1:688, ack 45, win 65535, length 68722721- 0/7/6 (685)
-    IP 172.31.44.118.35409 > 192.35.51.30.53: Flags [.], ack 688, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.43753: Flags [P.], seq 1:688, ack 44, win 65535, length 68727471- 0/7/6 (685)
-    IP 172.31.44.118.43753 > 192.35.51.30.53: Flags [.], ack 688, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.38093: Flags [P.], seq 1:688, ack 46, win 65535, length 6873191- 0/7/6 (685)
-    IP 172.31.44.118.38093 > 192.35.51.30.53: Flags [.], ack 688, win 30228, length 0
+    <TCP to f.gtld-servers.net.>
     IP 172.31.44.118.33696 > 212.111.225.17.53: 37528% [1au] A? micky.ibh.net. (42)
     IP 172.31.44.118.43940 > 212.111.225.17.53: 60920% [1au] AAAA? duck.ibh.net. (41)
-    IP 172.31.44.118.35409 > 192.35.51.30.53: Flags [F.], seq 45, ack 688, win 30228, length 0
-    IP 172.31.44.118.43753 > 192.35.51.30.53: Flags [F.], seq 44, ack 688, win 30228, length 0
+    <TCP to f.gtld-servers.net.>
     IP 172.31.44.118.59207 > 212.111.225.17.53: 36985% [1au] AAAA? adolar.ibh.net. (43)
-    IP 172.31.44.118.38093 > 192.35.51.30.53: Flags [F.], seq 46, ack 688, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.43965: Flags [P.], seq 1:688, ack 45, win 65535, length 6872360- 0/7/6 (685)
-    IP 172.31.44.118.43965 > 192.35.51.30.53: Flags [.], ack 688, win 30228, length 0
+    <TCP to f.gtld-servers.net.>
     IP 172.31.44.118.53922 > 212.111.225.17.53: 12635% [1au] AAAA? micky.ibh.net. (42)
-    IP 172.31.44.118.43965 > 192.35.51.30.53: Flags [F.], seq 45, ack 688, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.44237: Flags [P.], seq 1:688, ack 44, win 65535, length 68737364- 0/7/6 (685)
-    IP 172.31.44.118.44237 > 192.35.51.30.53: Flags [.], ack 688, win 30228, length 0
+    <TCP to f.gtld-servers.net.>
     IP 172.31.44.118.36906 > 212.111.225.17.53: 54964% [1au] A? duck.ibh.net. (41)
-    IP 172.31.44.118.44237 > 192.35.51.30.53: Flags [F.], seq 44, ack 688, win 30228, length 0
-    IP 194.0.0.53.53 > 172.31.44.118.48397: Flags [.], ack 40, win 57, options [nop,nop,TS val 2206616582 ecr 698561], length 0
-    IP 194.0.0.53.53 > 172.31.44.118.48397: Flags [P.], seq 1:667, ack 40, win 57, options [nop,nop,TS val 2206616582 ecr 698561], length 66622360- 0/7/5 (664)
-    IP 172.31.44.118.48397 > 194.0.0.53.53: Flags [.], ack 667, win 239, options [nop,nop,TS val 698589 ecr 2206616582], length 0
+    <TCP to f.gtld-servers.net.>
+    <TCP to a.nic.de.>
+
+DNS Query to and Response ns3.denic.de. (DENIC)
     IP 172.31.44.118.50213 > 81.91.173.19.53: 43701% [1au] AAAA? z.nic.de. (37)
-    IP 172.31.44.118.48397 > 194.0.0.53.53: Flags [F.], seq 40, ack 667, win 239, options [nop,nop,TS val 698589 ecr 2206616582], length 0
-    IP 192.35.51.30.53 > 172.31.44.118.39085: Flags [.], ack 47, win 65535, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.39085: Flags [F.], seq 688, ack 47, win 65535, length 0
-    IP 172.31.44.118.39085 > 192.35.51.30.53: Flags [.], ack 689, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.43753: Flags [.], ack 45, win 65535, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.43753: Flags [F.], seq 688, ack 45, win 65535, length 0
-    IP 172.31.44.118.43753 > 192.35.51.30.53: Flags [.], ack 689, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.38093: Flags [.], ack 47, win 65535, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.38093: Flags [F.], seq 688, ack 47, win 65535, length 0
-    IP 172.31.44.118.38093 > 192.35.51.30.53: Flags [.], ack 689, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.35409: Flags [.], ack 46, win 65535, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.35409: Flags [F.], seq 688, ack 46, win 65535, length 0
-    IP 172.31.44.118.35409 > 192.35.51.30.53: Flags [.], ack 689, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.43965: Flags [.], ack 46, win 65535, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.43965: Flags [F.], seq 688, ack 46, win 65535, length 0
-    IP 172.31.44.118.43965 > 192.35.51.30.53: Flags [.], ack 689, win 30228, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.44237: Flags [.], ack 45, win 65535, length 0
-    IP 192.35.51.30.53 > 172.31.44.118.44237: Flags [F.], seq 688, ack 45, win 65535, length 0
-    IP 172.31.44.118.44237 > 192.35.51.30.53: Flags [.], ack 689, win 30228, length 0
+    <TCP to a.nic.de.>
+    <TCP to f.gtld-servers.net.>
     IP 81.91.173.19.53 > 172.31.44.118.50213: 43701*- 0/1/1 (87)
+
+DNS Response duck.ibh.net. (IBH IT-Service)
     IP 212.111.225.17.53 > 172.31.44.118.37386: 8535*- 2/0/1 A 194.97.145.137, RRSIG (226)
     IP 212.111.225.17.53 > 172.31.44.118.33696: 37528*- 2/0/1 A 212.111.225.18, RRSIG (225)
     IP 212.111.225.17.53 > 172.31.44.118.59207: 36985*- 2/0/1 AAAA 2001:608:c00:10::53, RRSIG (238)
+
+DNS Query to micky.ibh.net. (IBH IT-Service)
     IP 172.31.44.118.60253 > 212.111.225.18.53: 45279% [1au] A? ns.netbsd.de. (41)
+
+DNS Response duck.ibh.net. (IBH IT-Service)
     IP 212.111.225.17.53 > 172.31.44.118.53922: 12635*- 2/0/1 AAAA 2a01:7700:0:1001::1:18, RRSIG (237)
     IP 212.111.225.17.53 > 172.31.44.118.43940: 60920*- 2/0/1 AAAA 2a01:7700:0:1001::1:17, RRSIG (236)
+
+DNS Query to micky.ibh.net. (IBH IT-Service)
     IP 172.31.44.118.42279 > 212.111.225.18.53: 45459% [1au] AAAA? ns.netbsd.de. (41)
-    IP 194.0.0.53.53 > 172.31.44.118.48397: Flags [F.], seq 667, ack 41, win 57, options [nop,nop,TS val 2206616696 ecr 698589], length 0
-    IP 172.31.44.118.48397 > 194.0.0.53.53: Flags [.], ack 668, win 239, options [nop,nop,TS val 698617 ecr 2206616696], length 0
+    <TCP to a.nic.de.>
+
+DNS Response duck.ibh.net. (IBH IT-Service)
     IP 212.111.225.17.53 > 172.31.44.118.36906: 54964*- 2/0/1 A 212.111.225.17, RRSIG (224)
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [F.], seq 31, ack 1100, win 246, length 0
+    <TCP with h.root-servers.net.>
+
+DNS Response micky.ibh.net. (IBH IT-Service)
     IP 212.111.225.18.53 > 172.31.44.118.42279: 45459*- 2/0/1 AAAA 2a00:19e0:3004:219:280:10ff:fe00:1731, RRSIG (238)
     IP 212.111.225.18.53 > 172.31.44.118.60253: 45279*- 2/0/1 A 195.22.142.107, RRSIG (226)
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [F.], seq 31, ack 1100, win 246, length 0
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [F.], seq 31, ack 1100, win 246, length 0
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [F.], seq 31, ack 1100, win 246, length 0
-    IP 198.97.190.53.53 > 172.31.44.118.42115: Flags [F.], seq 1100, ack 31, win 6, length 0
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [.], ack 1101, win 246, length 0
-    IP 172.31.44.118.42115 > 198.97.190.53.53: Flags [F.], seq 31, ack 1101, win 246, length 0
+    <TCP with h.root-servers.net.>
