@@ -1,6 +1,6 @@
 Bradford Smith (bsmith8)
 CS 615 HW 4 tcpdump DNS
-03/18/2018
+03/19/2018
 ------------------------
 
 Part 1: traceroute
@@ -208,6 +208,13 @@ telnet www.twitter.com.
 The trimmed, formatted and annotated tcpdump output from the client machine for
 the request can be found in the included `client-twitter.telent` file. Likewise,
 the output from the server can be found in `server-twitter.telnet`.
+
+The tcpdump output on the client side is quite small and straight forward, while
+the output on the server side ends up being surprisingly large. The server ends
+up contacting a lot more nameservers than it did to lookup yahoo.com. Also
+interesting to see is that the answer for Twitter ultimately comes from
+nameservers on dynect.net which is owned by "Oracle + Dyn" (according to whois),
+while the answer for Yahoo came from nameservers owned by Yahoo.
 
 (3) DNS Server Reverse Lookup
 -----------------------------
