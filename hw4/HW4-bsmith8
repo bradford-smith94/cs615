@@ -190,14 +190,15 @@ probably needed to open port 53 on my DNS server.
 
 I checked on the DNS server using `netstat -an` and found that so far it was
 only listening on local interfaces. So I added "listen-on { any; };" to the
-options section of the bind config and restarted the service. This still didn't
-work so I checked the systemd journal with `sudo journalctl -u bind9` and found
-that the client queries were being recieved but denied. After searching this I
-found I had to also add an allow-query option to bind, ("allow-query { any; };")
-although in practice any would ideally be replaced with a network that the DNS
-server will serve or at least be shielded from the Internet by a rate-limiter of
-some sort. After adding both those options to bind9 and restarting the service
-the client instance was able to resolve names using the DNS server instance.
+options section of the bind configuration and restarted the service. This still
+didn't work so I checked the systemd journal with `sudo journalctl -u bind9` and
+found that the client queries were being received but denied. After searching
+this I found I had to also add an allow-query option to bind, ("allow-query {
+any; };") although in practice any would ideally be replaced with a network that
+the DNS server will serve or at least be shielded from the Internet by a
+rate-limiter of some sort. After adding both those options to bind9 and
+restarting the service the client instance was able to resolve names using the
+DNS server instance.
 
 (2) DNS Client Telnet
 ---------------------
