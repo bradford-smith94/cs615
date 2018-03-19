@@ -52,6 +52,9 @@ Traceroute on a Map
     Frankfurt Germany (104.16.126.51). This is puzzling, maybe the link from
     there to Stevens is down right now?
 
+    Running a reverse lookup on the IP that it stopped at also doesn't reveal
+    any insights to what is going on.
+
 www.uni-marburg.de
 Visual Traceroute
     The traceroute starts in Washington state, crosses to the Eastern US, makes
@@ -169,6 +172,12 @@ command to fetch the index at www.yahoo.com.
 
 Trimmed, formatted and annotated tcpdump output for this request can be found in
 the included `yahoo.telnet` file.
+
+Interesting to see here is just how many nameservers are contacted before a
+connection is made to a domain. About 10 DNS servers were contacted, half of
+which were controlled by Yahoo, only one of which was a root server though.
+These numbers aren't exact and will probably vary depending on the domain being
+requested.
 
 Setup DNS Client
 ----------------

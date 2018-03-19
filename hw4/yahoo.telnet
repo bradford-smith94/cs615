@@ -41,6 +41,7 @@ TCP with Yahoo Nameserver (ns5-new.yahoo.com.) all Fin/ACKs and ACKs
     IP 172.31.44.118.56461 > 192.42.93.30.53: Flags [.], ack 785, win 30537, length 0
     IP 192.42.93.30.53 > 172.31.44.118.46003: Flags [.], ack 46, win 65535, length 0
     IP 192.42.93.30.53 > 172.31.44.118.46003: Flags [F.], seq 784, ack 46, win 65535, length 0
+
 Yahoo Nameserver (ns5-new.yahoo.com.) returning CNAME records
     IP 119.160.253.83.53 > 172.31.44.118.35577: 32017*- 1/4/3 CNAME atsv2-fp.wg1.b.yahoo.com. (189)
     IP 119.160.253.83.53 > 172.31.44.118.48754: 52241*- 1/4/3 CNAME atsv2-fp.wg1.b.yahoo.com. (189)
@@ -49,7 +50,7 @@ DNS Query for DS and NS records (f.root-servers.net.) Establish DNSSEC
     IP 172.31.44.118.60826 > 192.5.5.241.53: 25976 [1au] DS? com. (32)
     IP 172.31.44.118.39211 > 192.5.5.241.53: 448 [1au] NS? . (28)
 
-DNS Response (f.root-servers.net.)
+DNS Response - got the names of other root servers (f.root-servers.net.)
     IP 192.5.5.241.53 > 172.31.44.118.60826: 25976*- 2/0/1 DS, RRSIG (367)
     IP 192.5.5.241.53 > 172.31.44.118.39211: 448*-| 13/0/1 NS m.root-servers.net., NS b.root-servers.net., NS c.root-servers.net., NS d.root-servers.net., NS e.root-servers.net., NS f.root-servers.net., NS g.root-servers.net., NS h.root-servers.net., NS i.root-servers.net., NS a.root-servers.net., NS j.root-servers.net., NS k.root-servers.net., NS l.root-servers.net. (239)
 
@@ -82,7 +83,7 @@ TCP with a.gtld-servers.net.
     IP 172.31.44.118.48529 > 192.5.6.30.53: Flags [.], ack 762, win 30440, length 0
     IP 172.31.44.118.48529 > 192.5.6.30.53: Flags [F.], seq 41, ack 762, win 30440, length 0
 
-TODO DNS
+DNS query for DNSSEC key (d.gtld-servers.net.)
     IP 172.31.44.118.54956 > 192.31.80.30.53: 17574 [1au] DNSKEY? com. (32)
 
 End TCP with a.gtld-servers.net.
@@ -90,7 +91,7 @@ End TCP with a.gtld-servers.net.
     IP 192.5.6.30.53 > 172.31.44.118.48529: Flags [F.], seq 762, ack 42, win 65535, length 0
     IP 172.31.44.118.48529 > 192.5.6.30.53: Flags [.], ack 763, win 30440, length 0
 
-TODO
+DNSSEC key response and TCP with d.gtld-servers.net.
     IP 192.31.80.30.53 > 172.31.44.118.54956: 17574*-| 2/0/1 DNSKEY, DNSKEY (452)
     IP 172.31.44.118.53219 > 192.31.80.30.53: Flags [S], seq 499998406, win 29200, options [mss 1460,sackOK,TS val 679643 ecr 0,nop,wscale 7], length 0
     IP 192.31.80.30.53 > 172.31.44.118.53219: Flags [S.], seq 3698766494, ack 499998407, win 1460, options [mss 1460], length 0
@@ -99,44 +100,53 @@ TODO
     IP 192.31.80.30.53 > 172.31.44.118.53219: Flags [P.], seq 1:746, ack 35, win 65535, length 74527344*- 3/0/1 DNSKEY, DNSKEY, RRSIG (743)
     IP 172.31.44.118.53219 > 192.31.80.30.53: Flags [.], ack 746, win 30545, length 0
     IP 172.31.44.118.53219 > 192.31.80.30.53: Flags [F.], seq 35, ack 746, win 30545, length 0
+
+DNS query for A/AAAA records (ns1.yahoo.com.)
     IP 172.31.44.118.53328 > 68.180.131.16.53: 65483 [1au] A? atsv2-fp.wg1.b.yahoo.com. (53)
     IP 172.31.44.118.38947 > 68.180.131.16.53: 13931 [1au] AAAA? atsv2-fp.wg1.b.yahoo.com. (53)
+
+End TCP with d.gtld-servers.net.
     IP 192.31.80.30.53 > 172.31.44.118.53219: Flags [.], ack 36, win 65535, length 0
     IP 192.31.80.30.53 > 172.31.44.118.53219: Flags [F.], seq 746, ack 36, win 65535, length 0
     IP 172.31.44.118.53219 > 192.31.80.30.53: Flags [.], ack 747, win 30545, length 0
 
-TODO
+DNS response from ns1.yahoo.com.
     IP 68.180.131.16.53 > 172.31.44.118.38947: 13931- 0/4/3 (171)
     IP 68.180.131.16.53 > 172.31.44.118.53328: 65483- 0/4/3 (171)
 
 DNS Query for A/AAAA records (yf1.yahoo.com.)
     IP 172.31.44.118.59190 > 68.142.254.15.53: 26595 [1au] AAAA? atsv2-fp.wg1.b.yahoo.com. (53)
     IP 172.31.44.118.43787 > 68.142.254.15.53: 1234 [1au] A? atsv2-fp.wg1.b.yahoo.com. (53)
+
+DNS query for A/AAAA records (c.gtld-servers.net.)
     IP 172.31.44.118.59290 > 192.26.92.30.53: 53811% [1au] A? yf3.a1.b.yahoo.net. (47)
     IP 172.31.44.118.46014 > 192.26.92.30.53: 7098% [1au] AAAA? yf3.a1.b.yahoo.net. (47)
 
-DNS Returning AAAA records (yf1.yahoo.com.)
+DNS response with AAAA records (yf1.yahoo.com.)
     IP 68.142.254.15.53 > 172.31.44.118.59190: 26595*- 4/0/1 AAAA 2001:4998:44:41d::3, AAAA 2001:4998:44:41d::4, AAAA 2001:4998:58:1836::10, AAAA 2001:4998:58:1836::11 (165)
 
-TODO
+DNS query for A record (c.gtld-servers.net.)
     IP 172.31.44.118.42188 > 192.26.92.30.53: 23785% [1au] A? yf4.a1.b.yahoo.net. (47)
+
+DNS response from yf1.yahoo.com.
     IP 68.142.254.15.53 > 172.31.44.118.43787: 1234*- 4/0/1 A 98.138.219.231, A 72.30.35.9, A 72.30.35.10, A 98.138.219.232 (117)
+
+DNS query for AAAA record (c.gtld-servers.net.)
     IP 172.31.44.118.49700 > 192.26.92.30.53: 7743% [1au] AAAA? yf4.a1.b.yahoo.net. (47)
 
-TODO
+Lone TCP ACK from f.root-servers.net.
     IP 192.5.5.241.53 > 172.31.44.118.60123: Flags [.], ack 32, win 29, length 0
 
-TODO DNS
+DNS response from c.gtld-servers.net.
     IP 192.26.92.30.53 > 172.31.44.118.59290: 53811-| 0/8/3 (512)
     IP 192.26.92.30.53 > 172.31.44.118.46014: 7098-| 0/8/3 (512)
     IP 192.26.92.30.53 > 172.31.44.118.49700: 7743-| 0/8/3 (512)
     IP 192.26.92.30.53 > 172.31.44.118.42188: 23785-| 0/8/3 (512)
 
-TODO
-Contact yahoo? Establish telnet connection (Syn)
+Establish telnet connection (Syn) with www.yahoo.com (media-router-fp1.prod1.media.vip.bf1.yahoo.com)
     IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [S], seq 3776813938, win 29200, options [mss 1460,sackOK,TS val 679652 ecr 0,nop,wscale 7], length 0
 
-TODO TCP
+TCP with c.gtld-servers.net.
     IP 172.31.44.118.38613 > 192.26.92.30.53: Flags [S], seq 3055858952, win 29200, options [mss 1460,sackOK,TS val 679652 ecr 0,nop,wscale 7], length 0
     IP 172.31.44.118.52671 > 192.26.92.30.53: Flags [S], seq 669070231, win 29200, options [mss 1460,sackOK,TS val 679652 ecr 0,nop,wscale 7], length 0
     IP 172.31.44.118.43697 > 192.26.92.30.53: Flags [S], seq 1651207094, win 29200, options [mss 1460,sackOK,TS val 679652 ecr 0,nop,wscale 7], length 0
@@ -155,81 +165,118 @@ TODO TCP
     IP 172.31.44.118.52671 > 192.26.92.30.53: Flags [P.], seq 1:50, ack 1, win 29200, length 4913622% [1au] AAAA? yf3.a1.b.yahoo.net. (47)
     IP 192.26.92.30.53 > 172.31.44.118.38613: Flags [P.], seq 1:798, ack 50, win 65535, length 79753672- 0/9/9 (795)
     IP 172.31.44.118.38613 > 192.26.92.30.53: Flags [.], ack 798, win 30286, length 0
+
+DNS request for A record (ns2.yahoo.com.)
     IP 172.31.44.118.56196 > 68.142.255.16.53: 50080% [1au] A? yf3.a1.b.yahoo.net. (47)
+
+More TCP with c.gtld-servers.net.
     IP 172.31.44.118.38613 > 192.26.92.30.53: Flags [F.], seq 50, ack 798, win 30286, length 0
     IP 192.26.92.30.53 > 172.31.44.118.39439: Flags [P.], seq 1:798, ack 50, win 65535, length 79762352- 0/9/9 (795)
     IP 172.31.44.118.39439 > 192.26.92.30.53: Flags [.], ack 798, win 30286, length 0
+
+DNS request for A record (ns2.yahoo.com.)
     IP 172.31.44.118.54416 > 68.142.255.16.53: 22966% [1au] A? yf4.a1.b.yahoo.net. (47)
+
+More TCP with c.gtld-servers.net.
     IP 172.31.44.118.39439 > 192.26.92.30.53: Flags [F.], seq 50, ack 798, win 30286, length 0
     IP 192.26.92.30.53 > 172.31.44.118.52671: Flags [P.], seq 1:798, ack 50, win 65535, length 79713622- 0/9/9 (795)
     IP 172.31.44.118.52671 > 192.26.92.30.53: Flags [.], ack 798, win 30286, length 0
+
+DNS request for AAAA record (ns2.yahoo.com.)
     IP 172.31.44.118.57044 > 68.142.255.16.53: 12055% [1au] AAAA? yf3.a1.b.yahoo.net. (47)
+
+More TCP with c.gtld-servers.net.
     IP 192.26.92.30.53 > 172.31.44.118.43697: Flags [P.], seq 1:798, ack 50, win 65535, length 79761351- 0/9/9 (795)
     IP 172.31.44.118.43697 > 192.26.92.30.53: Flags [.], ack 798, win 30286, length 0
     IP 172.31.44.118.52671 > 192.26.92.30.53: Flags [F.], seq 50, ack 798, win 30286, length 0
 
-TODO DNS
+DNS response from ns2.yahoo.com and request for AAAA record.
     IP 68.142.255.16.53 > 172.31.44.118.56196: 50080- 0/2/3 (124)
     IP 172.31.44.118.55575 > 68.142.255.16.53: 59944% [1au] AAAA? yf4.a1.b.yahoo.net. (47)
 
-TODO TCP
+More TCP with c.gtld-servers.net.
     IP 192.26.92.30.53 > 172.31.44.118.38613: Flags [.], ack 51, win 65535, length 0
+
+DNS response from ns2.yahoo.com.
     IP 68.142.255.16.53 > 172.31.44.118.54416: 22966- 0/2/3 (124)
+
+More TCP with c.gtld-servers.net.
     IP 192.26.92.30.53 > 172.31.44.118.38613: Flags [F.], seq 798, ack 51, win 65535, length 0
     IP 172.31.44.118.38613 > 192.26.92.30.53: Flags [.], ack 799, win 30286, length 0
+
+DNS request for A record (yf1.yahoo.com.)
     IP 172.31.44.118.60259 > 68.180.130.15.53: 60935% [1au] A? yf3.a1.b.yahoo.net. (47)
+
+More TCP with c.gtld-servers.net.
     IP 172.31.44.118.43697 > 192.26.92.30.53: Flags [F.], seq 50, ack 798, win 30286, length 0
+
+DNS response from ns2.yahoo.com.
     IP 68.142.255.16.53 > 172.31.44.118.57044: 12055- 0/2/3 (124)
+
+More TCP with c.gtld-servers.net.
     IP 192.26.92.30.53 > 172.31.44.118.52671: Flags [.], ack 51, win 65535, length 0
     IP 192.26.92.30.53 > 172.31.44.118.52671: Flags [F.], seq 798, ack 51, win 65535, length 0
     IP 172.31.44.118.52671 > 192.26.92.30.53: Flags [.], ack 799, win 30286, length 0
+
+DNS request for A/AAAA records from yf1.yahoo.com.
     IP 172.31.44.118.46737 > 68.180.130.15.53: 6217% [1au] A? yf4.a1.b.yahoo.net. (47)
     IP 172.31.44.118.52435 > 68.180.130.15.53: 49884% [1au] AAAA? yf3.a1.b.yahoo.net. (47)
+
+More TCP with c.gtld-servers.net.
     IP 192.26.92.30.53 > 172.31.44.118.39439: Flags [.], ack 51, win 65535, length 0
+
+DNS response from ns2.yahoo.com.
     IP 68.142.255.16.53 > 172.31.44.118.55575: 59944- 0/2/3 (124)
+
+More TCP with c.gtld-servers.net.
     IP 192.26.92.30.53 > 172.31.44.118.39439: Flags [F.], seq 798, ack 51, win 65535, length 0
     IP 172.31.44.118.39439 > 192.26.92.30.53: Flags [.], ack 799, win 30286, length 0
 
-TODO DNS
+DNS responses from yf1.yahoo.com and request for AAAA record.
     IP 68.180.130.15.53 > 172.31.44.118.60259: 60935*- 1/0/1 A 68.142.254.15 (63)
     IP 172.31.44.118.51128 > 68.180.130.15.53: 23257% [1au] AAAA? yf4.a1.b.yahoo.net. (47)
     IP 68.180.130.15.53 > 172.31.44.118.46737: 6217*- 1/0/1 A 68.142.254.15 (63)
 
-TODO TCP
+End TCP with c.gtld-servers.net.
     IP 192.26.92.30.53 > 172.31.44.118.43697: Flags [.], ack 51, win 65535, length 0
     IP 192.26.92.30.53 > 172.31.44.118.43697: Flags [F.], seq 798, ack 51, win 65535, length 0
     IP 172.31.44.118.43697 > 192.26.92.30.53: Flags [.], ack 799, win 30286, length 0
 
-TODO DNS
+DNS response from yf1.yahoo.com.
     IP 68.180.130.15.53 > 172.31.44.118.52435: 49884*- 0/1/1 (117)
     IP 68.180.130.15.53 > 172.31.44.118.51128: 23257*- 0/1/1 (117)
 
-TODO
+TCP with www.yahoo.com
     IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [S.], seq 355743330, ack 3776813939, win 14480, options [mss 1460,sackOK,TS val 522180784 ecr 679652,nop,wscale 8], length 0
     IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 1, win 229, options [nop,nop,TS val 679657 ecr 522180784], length 0
+
+End TCP with f.root-servers.net.
     IP 192.5.5.241.53 > 172.31.44.118.60123: Flags [F.], seq 1100, ack 32, win 29, length 0
     IP 172.31.44.118.60123 > 192.5.5.241.53: Flags [.], ack 1101, win 245, length 0
 
-TODO
-Contact yahoo? GET /
-    IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [P.], seq 1:17, ack 1, win 229, options [nop,nop,TS val 684276 ecr 522180784], length 16: HTTP: GET / HTTP/1.1
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], ack 17, win 57, options [nop,nop,TS val 522199279 ecr 684276], length 0
-    IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [P.], seq 17:19, ack 1, win 229, options [nop,nop,TS val 684358 ecr 522199279], length 2: HTTP
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], ack 19, win 57, options [nop,nop,TS val 522199609 ecr 684358], length 0
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], seq 1:1449, ack 19, win 57, options [nop,nop,TS val 522199611 ecr 684358], length 1448: HTTP: HTTP/1.1 400 Host Header Required
-    IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 1449, win 251, options [nop,nop,TS val 684363 ecr 522199611], length 0
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], seq 1449:2897, ack 19, win 57, options [nop,nop,TS val 522199629 ecr 684363], length 1448: HTTP
-    IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 2897, win 274, options [nop,nop,TS val 684368 ecr 522199629], length 0
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], seq 2897:4345, ack 19, win 57, options [nop,nop,TS val 522199629 ecr 684363], length 1448: HTTP
-    IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 4345, win 296, options [nop,nop,TS val 684368 ecr 522199629], length 0
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], seq 4345:5793, ack 19, win 57, options [nop,nop,TS val 522199647 ecr 684368], length 1448: HTTP
-    IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 5793, win 319, options [nop,nop,TS val 684372 ecr 522199647], length 0
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [P.], seq 5793:6859, ack 19, win 57, options [nop,nop,TS val 522199647 ecr 684368], length 1066: HTTP
-    IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 6859, win 342, options [nop,nop,TS val 684373 ecr 522199647], length 0
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [F.], seq 6859, ack 19, win 57, options [nop,nop,TS val 522210431 ecr 684373], length 0
-    IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [F.], seq 19, ack 6860, win 342, options [nop,nop,TS val 687068 ecr 522210431], length 0
-    IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], ack 20, win 57, options [nop,nop,TS val 522210449 ecr 687068], length 0
-    ARP, Request who-has 172.31.44.118 tell 172.31.32.1, length 28
-    ARP, Reply 172.31.44.118 is-at 0e:4f:f2:13:07:56, length 28
-    IP 172.31.44.118.39351 > 169.254.169.123.123: NTPv4, Client, length 48
-    IP 169.254.169.123.123 > 172.31.44.118.39351: NTPv4, Server, length 48
+Main TCP flow with www.yahoo.com (GET / HTTP/1.1)
+    Push/ACK
+        IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [P.], seq 1:17, ack 1, win 229, options [nop,nop,TS val 684276 ecr 522180784], length 16: HTTP: GET / HTTP/1.1
+    ACK
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], ack 17, win 57, options [nop,nop,TS val 522199279 ecr 684276], length 0
+    Push/ACK
+        IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [P.], seq 17:19, ack 1, win 229, options [nop,nop,TS val 684358 ecr 522199279], length 2: HTTP
+    ACKs
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], ack 19, win 57, options [nop,nop,TS val 522199609 ecr 684358], length 0
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], seq 1:1449, ack 19, win 57, options [nop,nop,TS val 522199611 ecr 684358], length 1448: HTTP: HTTP/1.1 400 Host Header Required
+        IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 1449, win 251, options [nop,nop,TS val 684363 ecr 522199611], length 0
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], seq 1449:2897, ack 19, win 57, options [nop,nop,TS val 522199629 ecr 684363], length 1448: HTTP
+        IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 2897, win 274, options [nop,nop,TS val 684368 ecr 522199629], length 0
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], seq 2897:4345, ack 19, win 57, options [nop,nop,TS val 522199629 ecr 684363], length 1448: HTTP
+        IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 4345, win 296, options [nop,nop,TS val 684368 ecr 522199629], length 0
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], seq 4345:5793, ack 19, win 57, options [nop,nop,TS val 522199647 ecr 684368], length 1448: HTTP
+        IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 5793, win 319, options [nop,nop,TS val 684372 ecr 522199647], length 0
+    Push/ACK
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [P.], seq 5793:6859, ack 19, win 57, options [nop,nop,TS val 522199647 ecr 684368], length 1066: HTTP
+    ACK
+        IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [.], ack 6859, win 342, options [nop,nop,TS val 684373 ecr 522199647], length 0
+    Fin/ACKs
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [F.], seq 6859, ack 19, win 57, options [nop,nop,TS val 522210431 ecr 684373], length 0
+        IP 172.31.44.118.37142 > 72.30.35.9.80: Flags [F.], seq 19, ack 6860, win 342, options [nop,nop,TS val 687068 ecr 522210431], length 0
+    ACK
+        IP 72.30.35.9.80 > 172.31.44.118.37142: Flags [.], ack 20, win 57, options [nop,nop,TS val 522210449 ecr 687068], length 0
