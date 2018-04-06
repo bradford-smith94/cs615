@@ -1,0 +1,41 @@
+Bradford Smith (bsmith8)
+CS 615 HW 5 Text Processing
+04/06/2016
+---------------------------
+
+The first issue that I needed to overcome was installing curl on the NetBSD
+instance. I remembered from FreeBSD earlier in the class that the package
+manager was called pkg, so I checked for that and pkg_static, both yeilded a
+'command not found'. Running `man -k pkg` pointed me to pkg_add(1).
+
+Reading the manpage for pkg_add I found that the package manager works using
+files or FTP URLs, and since I didn't have a file I needed to find the NetBSD
+FTP URL for curl. A quick Internet search and I found:
+
+    ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/www/curl/README.html
+
+Which allowed me to find the correct URL to use for my architecture and NetBSD
+version. The final command I used to install curl ended up being:
+
+    pkg_add ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/i386/7.0/All/curl-7.58.0.tgz
+
+(Later I ended up finding setenv commands for the PKG_PATH in the default .cshrc
+waiting to be uncommented which - if I used csh - would have allowed me to
+install using `pkg_add curl`).
+
+Then I used curl to download the data for the assignment:
+
+    curl -k https://dumps.wikimedia.org/other/pagecounts-raw/2016/2016-08/pagecounts-20160803-090000.gz >data.gz
+
+I knowingly ignored SSL certificate errors because the assignment specified that
+only curl was to be installed and I assumed that to fix this issue I would need
+to install something else.
+
+Part 1
+======
+
+Part 2
+======
+
+Part 3
+======
