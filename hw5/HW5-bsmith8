@@ -34,6 +34,18 @@ to install something else.
 Part 1
 ======
 
+I started by writing a test script to submit my answers to the cgi on the
+website. Then I wrote up a script to generate my answers and pass them to the
+test script. In that script I began building up the commands I would use to get
+each of the five answers to part 1.
+
+Occasionally I would jump out of my editor to test some commands more quickly
+than sending them to the cgi on the website each time. Eventually I ended up
+with a script containing the five commands to get the correct answers.
+
+The spec for the script for part 2 is different from the quick one I wrote up so
+I will need to change it slightly before submitting it for part 2.
+
 Part 2
 ======
 
