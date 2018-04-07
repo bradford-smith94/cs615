@@ -1,6 +1,6 @@
 Bradford Smith (bsmith8)
 CS 615 HW 5 Text Processing
-04/06/2016
+04/07/2018
 ---------------------------
 
 The first issue that I needed to overcome was installing curl on the NetBSD
@@ -29,7 +29,7 @@ Then I used curl to download the data for the assignment:
 
 I knowingly ignored SSL certificate errors because the assignment specified that
 only curl was to be installed and I assumed that to fix this issue I would need
-to install something else.
+to install another package with SSL certificates.
 
 Part 1
 ======

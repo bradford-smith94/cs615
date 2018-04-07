@@ -1,4 +1,8 @@
 #!/bin/sh
+# Bradford Smith (bsmith8)
+# CS 615 HW5 part1.sh
+# 04/06/2018
+##########################
 
 ANS1=$(gzcat data.gz | grep ^en | wc -l | tr -d '[:space:]')
 echo "Answer for q1:" $ANS1
