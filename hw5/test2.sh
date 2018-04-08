@@ -7,5 +7,5 @@
 HOST=http://ec2-54-145-67-75.compute-1.amazonaws.com/
 PART2=cgi-bin/hw5-2.cgi
 
-echo curl --data-binary @part2.sh $HOST$PART2
-curl --data-binary @part2.sh $HOST$PART2
+echo curl -H 'Expect:' --data-binary @part2.sh $HOST$PART2
+curl -H 'Expect:' --data-binary @part2.sh $HOST$PART2

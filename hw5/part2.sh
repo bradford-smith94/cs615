@@ -6,17 +6,12 @@
 
 main () {
 	parse_input "$*"
-	DATA=$1
 
-	get_unique_object_count $DATA
-
-	get_most_frequent_object $DATA
-
-	get_total_bytes_transferred $DATA
-
-	get_requests_per_second $DATA
-
-	get_largest_object $DATA
+	get_unique_object_count $1
+	get_most_frequent_object $1
+	get_total_bytes_transferred $1
+	get_requests_per_second $1
+	get_largest_object $1
 }
 
 parse_input () {
