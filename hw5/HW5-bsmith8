@@ -1,6 +1,6 @@
 Bradford Smith (bsmith8)
 CS 615 HW 5 Text Processing
-04/07/2018
+04/08/2018
 ---------------------------
 
 The first issue that I needed to overcome was installing curl on the NetBSD
@@ -56,8 +56,8 @@ order to fit the specification for part 2.
 
 I then ran into issues submitting it, the server responded with an HTTP 417.
 Eventually it was determined this was due to curl breaking up the POST and
-sending 'Expect: 100-continue'. Adding '-H "Expect:"' to my curl command to
-submit part 2 resolved this issue.
+sending 'Expect: 100-continue'. Forcing curl to send an empty expect header by
+adding '-H "Expect:"' to my curl command to submit part 2 resolved this issue.
 
 Part 3
 ======
