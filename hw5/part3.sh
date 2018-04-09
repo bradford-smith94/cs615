@@ -120,7 +120,7 @@ get_largest_object () {
 # takes in inputfile as only argument
 filter_by_region () {
 	if [ "$REGION" != "all" ]; then
-		zgrep ^"$REGION" $1
+		zgrep "^$REGION[\. ]" $1
 	else
 		gzcat $1
 	fi

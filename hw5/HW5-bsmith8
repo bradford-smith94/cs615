@@ -31,6 +31,7 @@ I knowingly ignored SSL certificate errors because the assignment specified that
 only curl was to be installed and I assumed that to fix this issue I would need
 to install another package with SSL certificates.
 
+
 Part 1
 ======
 
@@ -43,6 +44,12 @@ Occasionally I would jump out of my editor to test some commands more quickly
 than sending them to the cgi on the website each time. Eventually I ended up
 with a script containing the five commands to get the correct answers.
 
+My solutions all used `gzcat` to pipe the file into `grep` to filter for the
+'en' domain, then to `awk` to process the appropriate column. Most frequently
+requested object and largest object then also needed to be piped to `sort`,
+`head` and `cut` to extract the object names.
+
+
 Part 2
 ======
 
@@ -50,14 +57,82 @@ The spec for the script for part 2 is different from the quick one I wrote up so
 I needed to change it slightly before submitting it for part 2.
 
 I copied my part 1 script into a new file as a starting point. Then I began
-pulling functionality out into separate functions for readability and to
-minimize code duplication. I needed to alter how the script printed answers in
-order to fit the specification for part 2.
+pulling functionality out into separate functions for readability in order to
+minimize code duplication. I also needed to alter how the script printed answers
+in order to fit the specification for part 2.
 
 I then ran into issues submitting it, the server responded with an HTTP 417.
 Eventually it was determined this was due to curl breaking up the POST and
 sending 'Expect: 100-continue'. Forcing curl to send an empty expect header by
 adding '-H "Expect:"' to my curl command to submit part 2 resolved this issue.
 
+In this iteration of my solutions I removed the useless `gzcat` in favor of
+`zgrep`. Each of the questions has it's own function in the script and
+duplicated functionality such as filtering the input and trimming spaces were
+also given their own functions. This script worked but was slow, I tried
+speeding it up by saving the output of the filtering `zgrep` operation but this
+seemed to actually slow down the script, so I just moved on to part 3.
+
+
 Part 3
 ======
+
+My part 2 script was a very good starting place for part 3. I needed to add
+`getopts` to the initial parsing done by my script as well as a help message and
+needed to update the filtering function to take in the domain.
+
+However, when it came to testing this script it timed out when working on the
+domain 'all'. So I began searching for how to speed up the script. 
+
+I was researching on the Internet whether my use of `echo` could be improved by
+switching to `printf` and stumbled upon a StackOverflow answer [1] that
+mentioned `sed 'Nq;d'` was faster than `head -n N`, so this was my first
+improvement.
+
+This was shortly followed by my realization that the function I had created to
+trim spaces from pipeline outputs was unnecessary for most of the questions.
+This function was removed and replaced with more tailored `sed` commands where
+needed.
+
+This still didn't speed up the script enough, and testing on my instance rather
+than the grading instance revealed that `sort` was failing because it was
+running the instance out of resources. While thinking about how to fix `sort` I
+realized that the output didn't necessarily need to be sorted as long as I could
+find the row that I interested in for each of the questions. I realized that
+`awk` should be able to do this itself, and would be a nice performance
+improvement because `awk` was being called anyway. A quick search revealed a
+forum post [2] with the structure of an `awk` script that I needed. This allowed
+me to replace instances of `sort`, `sed` and `cut` with just a better structured
+`awk` script.
+
+After the `awk` improvements most of the questions were answered by piping
+`zgrep` into `awk`, with only the number of unique objects requiring `wc -l`.
+These improvements allowed the script to run on my instance without running out
+of resources and also passed on the grading instance. Although by this point the
+size of input on the grading instance had been reduced due to concerns over
+multiple students trying to run scripts on it at the same time.
+
+
+What I learned
+==============
+
+I learned about `gzcat`/`zcat` so that I did not have to decompress all the data
+to work with it. I then learned about `zgrep` being able to `grep` the data
+without having to `cat` it.
+
+What I'm more interested that I learned was the trick with `sed` where:
+
+    sed 'Nq;d'
+
+is a faster version of:
+
+    head -n N
+
+because `sed` is able to quit immediately after printing the lines desired and
+the bits of `awk` that I learned to avoid using `sort`.
+
+
+References:
+===========
+[1]: https://stackoverflow.com/a/6022431
+[2]: https://www.unix.com/unix-for-dummies-questions-and-answers/246529-using-awk-find-use-maximum-value-column-data.html
